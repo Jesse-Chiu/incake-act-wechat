@@ -1,0 +1,10 @@
+.content div{ position: relative; width: 100%; }
+.content div a{ position: absolute; display: block; }
+.content div a.a_button{ width: 56%; left: 22%; }
+.content .package01 a{ bottom: 2%; }
+.content .package02 a{ bottom: 4%; }
+.content .cake01 .link01{ width: 56%; height: 58%; top: 2%; right: 0; }
+.content .cake01 .link02{ width: 64%; height: 40%; bottom: 5%; left: 0; }
+.content .cake02 .link01{ width: 20%; height: 60%; top: 10%; left: 9%; }
+.content .cake02 .link02{ width:41%; height: 46%; top: 6%; right: 4%; }
+.content .cake02 .link03{ width:48%; height: 32%; bottom: 2%; right: 4%; }
