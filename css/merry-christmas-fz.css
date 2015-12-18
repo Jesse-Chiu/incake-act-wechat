@@ -1,0 +1,10 @@
+.content{ position: relative; }
+.content a{ position: absolute; display: block; }
+.content .a_button{ top: 14%; left: 50%; width: 64%; margin-left: -32%; }
+.content .a_cake{ top: 20.5%; right: 7%; width: 20%; height: 6%; }
+.content .a_flower{ top: 45.5%; left: 30%; width: 20%; height: 6%; }
+.content .a_wine{ top: 73%; left: 48%; width: 20%; height: 6%; }
+.rules{ width: 100%; background-color: #d2d247; }
+.rules dl{ width: 90%; margin: 0 auto; padding: 20px 0; color: #5f5f0e;}
+.rules dl dt{ font-size: 16px; margin-bottom: 5px; }
+.rules dl dd{ font-size: 12px; line-height: 18px; text-align: justify;}
