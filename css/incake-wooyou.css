@@ -1,0 +1,10 @@
+header .wooyou-logo{ height: 34px; margin-left: 6px; }
+.content{ color: #6a3906; background-color: #f7f9fc; }
+.content img{ width: 100%; }
+.content .center{ position: relative; margin-top: 8%; }
+.content a{ position: absolute; top:-8%; left: 36%; display: block; width: 26.5%; }
+.content dl{ width: 84%; margin: 0 auto; padding-bottom: 22px; text-align: justify; }
+.content dt{ margin-bottom: 6px; line-height: 18px; font-size: 18px; color: #e13811; }
+.content dd{ line-height: 16px; }
+.content dd span{ color: #e13811; }
+.content .rules{ margin-top: -10px; }

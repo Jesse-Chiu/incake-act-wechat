@@ -1,0 +1,6 @@
+.content{ color: #595757; }
+.content a{ display: block; }
+.content .rules{ width: 100%; background: url(../img/bankOfMinSheng/body-bg.jpg); }
+.content .rules dl{ width: 90%; margin: 0 auto; padding: 22px 0 26px; text-align: justify; }
+.content .rules dl dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; border-bottom: 1px #4c84b8 solid; }
+.content .rules dl dd{ line-height: 20px; }

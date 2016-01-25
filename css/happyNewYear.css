@@ -1,0 +1,49 @@
+.content{ background: url(../img/happyNewYear/header-bg.jpg); color: #fff8c6; }
+
+.content .title{ margin-top: 18px; }
+
+.content .rotary{ position: relative; width: 100%; margin-top: -8%; }
+.content .rotary .popup-bg{ position: absolute; top: 18%; left: 0; width: 100%; z-index: 999; }
+.content .rotary .show-prize{ position: relative; width: 100%; text-align: center; }
+.content .show-prize .prize-item { position: absolute; top: 0; left: 0; width: 100%; padding: 30% 0 14%; }
+.content .show-prize .prize-item img { width: 28%; }
+.content .show-prize .prize-item p.tip { font-size: 16px; line-height: 16px; color: #755c31; }
+.content .show-prize .prize-item p.prize-name { width: 45%; margin: 0 auto; color: #755c31; }
+.content .show-prize .prize-item a{position: absolute; bottom: 4%; display: inline-block; width: 18%; border-radius: 10px; line-height: 22px; background-color: #755c31; color: #fff; }
+.content .show-prize .prize-item a.btn_goOn{ left: 31%; }
+.content .show-prize .prize-item a.btn_select{ right: 31%; }
+
+.content .rotary i{ position: absolute; display: block; }
+.content .rotary i.iconL01{ top: 14%; left: 8%; width: 4.2%;}
+.content .rotary i.iconL02{ top: 52%; left: 2%; width: 4%;}
+.content .rotary i.iconL03{ bottom: 2%; left: 6%; width: 5.2%;}
+.content .rotary i.iconR01{ top: 10%; right: 36%; width: 4.6%;}
+.content .rotary i.iconR02{ top: 18%; right: 6%; width: 4.2%;}
+.content .rotary i.iconR03{ top: 56%; right: 2%; width: 4.6%;}
+.content .rotary i.iconR04{ bottom: 4%; right: 6%; width: 5.4%;}
+.content .rotary .click-button{ position: absolute; top: 37%; left: 30%; width: 40%; }
+.content .rotary .hand{ position: absolute; top: 64%; left: 52%; width: 6.25%; }
+
+.content .tips { width: 60%; height: 36px; line-height: 32px; margin: 5% auto; font-size: 14px; background: url(../img/happyNewYear/btn-bg.png) no-repeat center; background-size: contain; text-align: center; color: #fff; text-shadow: 1px 1px 2px #404040; }
+.content .tips span{ font-size: 18px; color: #ff032f; }
+
+.content .nomination-list{ position: relative; width: 80%; margin: 0 auto; padding: 3% 0; }
+.content .nomination-list .list { position: absolute; top: 12%; left: 0; width: 92%; height: 70%; margin-left: 3.2%; padding-bottom:6px; font-size: 12px;  background-color: #fe899a; color: #c41a3b; }
+.content .nomination-list .list .titles{ width: 100%; margin-bottom: 6px; font-size: 16px; line-height: 26px; text-align: center; background-color: #f2687d; }
+.content .nomination-list #scroll{ height: 74%; overflow: hidden; }
+.content .nomination-list .list ul,.nomination-list .list #scroll2{ width: 80%; margin: 0 auto; }
+.content .nomination-list .list li>p{ float: left; line-height: 17px; }
+.content .nomination-list .list p.level{ width: 30%; }
+.content .nomination-list .list p.name{ width: 40%; }
+.content .nomination-list .list p.time{ width: 30%; text-align: right; }
+
+.content .rules{ width: 100%; margin-top: 5%; padding: 22px 0 20px; background: url(../img/happyNewYear/rule-bg.jpg); }
+.content .rules dl{ width: 90%; margin: 0 auto; padding-bottom:6px; text-align: justify; }
+.content .rules dl dt{ line-height: 30px; font-size: 18px; }
+.content .rules dl dd{ line-height: 20px; }
+
+.popup-tip{ position: absolute; top: 0; left: 0; width: 100%; z-index: 9999; }
+.popup-tip .tip-text{ width: 66%; margin: 82% auto 0; padding: 15px 5px; text-align: center; border-radius: 5px; background-color: #f5eddc; color: #3a2e18; }
+.popup-tip .tip-text p.font-red{ color: #e2625b; }
+.popup-tip .tip-text a{ display: inline-block; width: 30%; border-radius: 10px; line-height: 22px; margin-top: 10px; background-color: #755c31; color: #fff; }
+.popup-tip .tip-text a.return{ margin-left: 5%; }

@@ -1,0 +1,35 @@
+.content{ position: relative; height: 730px; background: url(../img/new-years-day/container-bg.jpg) no-repeat; color: #523030; }
+.content dl{ width: 82%; margin: 10px auto 0; }
+.content dl dt{ font-size: 14px; line-height: 20px; color: #e83828; font-weight: bold; }
+.content dl dd{ font-size: 12px; line-height: 20px; color: #817f7f; }
+.content dl dd span{ color: #e83828; }
+.content .a_button{ position: absolute; top: 56%; left: 10%; width: 30%; }
+.content .cakeImg { width: 100%; margin: 20px auto 0; text-align: right; }
+.content .cakeImg img{ width: 62%;  }
+.content .rules{ margin-top: 30px; }
+.content .rules .dd-time { visibility: hidden; }
+.content .paper-cut{ position: absolute; bottom: 1%; right: 8%; width: 10%; }
+
+/* 禁止横屏样式 */
+.mod-orient-layer {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	z-index: 9999
+}
+.mol_content {
+	position: absolute;
+	width: 100%;
+	top: 45%;
+	text-align: center
+}
+.mol_desc {
+	margin-top: 20px;
+	font-size: 15px;
+	font-family: "incake";
+	color: #fff
+}

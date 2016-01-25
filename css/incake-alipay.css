@@ -1,0 +1,7 @@
+header .alipay-logo{ height: 32px; margin-left: 6px; }
+.content{ position: relative; color: #595757;  background: url(../img/incake-alipay/list-bg.jpg); }
+.content a{ position: absolute; top:36%; left: 50%; display: block; width: 24%; height: 32px; margin-left: -17%; padding: 0 4%; font-size: 18px; line-height: 32px; text-align: center; background-color: #009fe8; color: #fff; border-radius: 10px; }
+.content dl{ width: 84%; margin: -5% auto 0 auto; padding-bottom: 16px; text-align: justify; }
+.content dt{ margin-bottom: 6px; line-height: 18px; font-size: 18px; }
+.content dd{ line-height: 18px; }
+.content dd span{ color: #e13811; }

@@ -1,0 +1,70 @@
+.content{ color: #6a3906; background-color: #fff; }
+
+.content .body{ position: relative; width: 90%; margin: 0 auto; padding-bottom: 40px; }
+
+.content .title{ padding-bottom: 4px; border-bottom: 1px #b69273 dashed; }
+.content .title2{ padding-top: 10px; }
+.content .title img{ width: 42%; }
+
+.body .question dl{ width: 100%; }
+.body .question dt{ line-height: 14px; padding: 12px 0; }
+.body .question span{ font-weight: bold; margin-right: 6px; }
+.body .question dd{ width: 50%; margin-bottom:6px; }
+.body .question a{ display: block; padding-left: 26px; line-height: 24px; color: #c9bc9c; border: 1px #c9bc9c solid; border-radius: 16px; background: url(../img/incake-pingAn/icon.png) no-repeat; background-position: 0 -24px; }
+.body .question .active a{ color: #fff; border-color: #ff1636; background-color: #ff1636; background-position: 0 0; }
+
+.body .company-info{ padding: 15px 0; text-align: center; }
+.body .company-info thead{ background-color: #e7e2d4; }
+.body .company-info th{ width: 30%; padding: 4px 0;  }
+.body .company-info th:nth-of-type(2){ width: 40%; }
+.body .company-info tbody{ background-color:#f3f3f3; }
+.body .company-info td{ padding: 6px 0;  }
+.body .company-info td:nth-of-type(2){ text-align: justify; }
+.body .company-info td a{ color: #ff1636; text-decoration: underline; }
+
+.body .info{ padding: 15px 20px 10px; color: #404040; border-top: 1px #b69273 dashed; border-bottom: 1px #b69273 dashed; }
+.body .info p{ padding-bottom:8px; line-height: 20px; }
+.body .info p input{ height: 22px; text-indent: 5px; border: 1px #a7a7a7 solid; }
+.body .info p select{ height: 24px; border: 1px #a7a7a7 solid; }
+.body .info .name input[type=text]{ width: 40%;}
+.body .info .name input[type=radio]{ margin: 0 2px 0 5%; vertical-align: middle; }
+.body .info .birthday select{ width: 25%; }
+.body .info .phone input{ width: 76%; }
+.body .info .addr select{ width: 38%; }
+
+.body .receive{ padding-top: 15px; }
+.body .receive .termsAgreed{ position: relative; width: 100%; }
+.body .receive span{ display: inline-block; width: 12px; height: 12px; margin-right: 5px; border: 1px #949494 solid; vertical-align: text-top; }
+.body .receive i{ position: absolute; top: -2px; left: -2px; display: block; width: 18px; height: 18px; background: url(../img/incake-pingAn/icon.png) no-repeat; background-position: 0 -48px; }
+.body .receive a{display: block; width: 42%; margin: 20px auto 10px; padding: 6px 0; font-size: 14px; font-weight: bold; text-align: center; color: #fff; background-color: #949494; }
+.body .receive a.btn_agreed{ background-color: #f20f3a; }
+.body .receive .tips{ width: 100%; padding: 10px 0 30px; text-align: center; border-top: 1px #b69273 dashed; }
+
+.body .introduce li{ margin-top: -1px; padding-bottom: 10px; background: url(../img/incake-pingAn/list-bg.png) no-repeat;  }
+.body .introduce li:nth-of-type(1){ background-position: 0 4px; }
+.body .introduce li:nth-of-type(2){ background-position: 0 -53px; }
+.body .introduce li:nth-of-type(3){ background-position: 0 -125px; }
+.body .introduce li:nth-of-type(4){ background-position: 0 -168px; }
+.body .introduce li:nth-of-type(5){ background-position: 0 -250px; }
+.body .introduce p{ width: 22%; padding-left: 6%; font-size: 14px; font-weight: bold; float: left; }
+.body .introduce p i{ display: inline-block; width: 8px; height: 8px; margin: 0 5px 0 -27.2%; border: 2px #fa3c5d solid; background-color: #fff; border-radius: 6px; }
+.body .introduce dl{ width: 72%; float: left; color: #6a0e06; text-align: justify; }
+.body .introduce dt{ font-weight: bold; }
+.body .introduce .item01{ color: #ff3358; }
+.body .introduce .item02{ color: #db2842; }
+.body .introduce .item02 i{ border-color: #d92d46; }
+.body .introduce .item03{ color: #bc1f30; }
+.body .introduce .item03 i{ border-color: #af1523; }
+.body .introduce .item04{ color: #961319; }
+.body .introduce .item04 i{ border-color: #90191b; }
+.body .introduce .item05{ color: #6a0e06; }
+.body .introduce .item05 i{ border-color: #781712; }
+
+.body .rules dt{ margin-top: 30px; font-size: 14px; line-height: 26px; font-weight: bold; }
+.body .rules dd{ line-height: 16px; text-align: justify; }
+.body .icon-cup{ position: absolute; right: 0; bottom: 20px; width: 15%; }
+
+.popup-tip{ position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+.popup-tip .tip-text{ position: absolute; top: 40%; left: 12%; z-index:9999; width: 76%; border-radius: 12px; border: 2px #ff1636 solid; background-color: #fffdfd; color: #7e594a; }
+.popup-tip .tip-text p{ padding: 16px 30px; line-height: 20px; }
+.popup-tip .tip-text a{ position: absolute; top: -14%; right: -4%; display: block; width: 9%; height: 26px; background: url(../img/incake-pingAn/close-btn.png) no-repeat; background-size: contain; }
