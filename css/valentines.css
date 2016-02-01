@@ -1,7 +1,6 @@
 .content{ background:url(../img/valentines/bg.jpg); }
 .content .top{ padding-top: 14px; }
-.content .top .single{ position: relative; margin-top: -20%; }
-.content .top .single-fz{ margin-top: -14%; }
+.content .top .single{ position: relative; margin-top: -14%; }
 .content .single a{ position: absolute; display: block; border-radius: 50%; }
 .content .single .a_flower{ top: 6%; left: 0; width: 48%; height: 52%;}
 .content .single .a_wine{ top: 28%; right: 3%; width: 34%; height: 42%; }
