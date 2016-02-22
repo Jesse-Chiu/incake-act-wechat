@@ -1,0 +1,9 @@
+.content { background: url(../img/lantern-festival-wuxi/body_bg.jpg); }
+.content .cakeList { margin: 20px 0 30px; }
+.content .shopList,.content .rule {padding-bottom: 30px;}
+.content dt { width: 68.4%; margin: 0 auto 16px; }
+.content dd { width: 90%; margin: 0 auto; line-height: 18px; color: #af9762; }
+.content dd p{ width: 22%; float: left; }
+.content dd span { display: inline-block; float: left; width: 78%; }
+.content .rule dd p { width: 6%; }
+.content .rule dd span { width: 94%; }
