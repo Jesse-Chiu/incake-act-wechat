@@ -1,0 +1,6 @@
+.content { background-color: #7bd6d8; }
+.content .banner{ position: relative; }
+.content a{ position: absolute; top:66%; left: 56%; display: block; width: 26%; height: 18%; }
+.content dl{ width: 88%; margin: 0 auto; padding-bottom: 18px; color: #03002f; text-align: justify; }
+.content dt{ line-height: 22px; font-size: 14px; }
+.content dd{ line-height: 16px; }
