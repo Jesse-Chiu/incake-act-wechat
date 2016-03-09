@@ -1,0 +1,6 @@
+.content .main{ position: relative; }
+.content a{ position: absolute; bottom: 2%; left: 30%; display: block; width: 40%; }
+.content .rules{ width: 100%; background: url(../img/ximiaomiao/rule_bg.jpg); color: #666666; }
+.content .rules dl{ width: 88%; margin: 0 auto; padding: 22px 0; text-align: justify; }
+.content .rules dl dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; color: #a56250; }
+.content .rules dl dd{ font-size: 14px; line-height: 20px; }
