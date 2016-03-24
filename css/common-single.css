@@ -1,0 +1,14 @@
+@charset "UTF-8";
+html{ -webkit-tap-highlight-color: transparent; }
+body{ width: 100%; font-family: "Arial","微软雅黑"; font-size: 12px; }
+input,button,select,textarea{ outline:none; }
+body, p, h1, h2, h3, ul, dl, dt, dd, input, select ,textarea { margin: 0; padding: 0; }
+li { list-style: none; }
+img {width: 100%; border: none; vertical-align: top; }
+a:link, a:visited { text-decoration: none; }
+a:hover, a:focus, a:active { text-decoration: none; }
+
+.hide {	display: none; }
+.clearfix { zoom: 1; }
+.clearfix:after { display: block; content: ''; clear: both; }
+.container { width: 100%; }

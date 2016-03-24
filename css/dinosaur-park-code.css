@@ -1,0 +1,19 @@
+﻿.container { background-color: #1e4b8c; }
+.content { background: url(../img/dinosaur-park/main_bg.jpg) no-repeat; background-size: contain; }
+.content .code { width: 56%; padding: 10px 0; background: url(../img/dinosaur-park/text_bg.jpg); border: 2px dashed #ccc4b4; border-radius: 6px; margin: 30px auto; }
+.code .title { margin-bottom: 14px; font-size: 16px; line-height: 16px; text-align: center; color: #9d000d; }
+.send-code .number { font-size: 30px; line-height: 30px; text-align: center; color: #9d000d; }
+.send-code .number span { font-size: 14px; font-weight: bold; }
+.my-code .number { font-size: 20px; line-height: 24px; text-align: center; }
+.winning-code .number { font-size: 36px; text-align: center; color: #9d000d; }
+.content .line { width: 84%; margin: 0 auto; border: 1px solid #516c93; }
+.content .lottery { display: block; width: 52%; padding: 12px 20px; background-color: #9d000d; border-radius: 24px; margin: 40px auto; font-size: 16px; text-align: center; color: #fff; }
+.content .cake, .content .logo { width: 36%; padding: 8px 0 26px; margin: 0 auto; }
+.content .cake { padding: 0; }
+
+.mask { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.8);}
+.mask .rules { width: 80%; margin: 66px auto 0; color: #fff; }
+.mask .rules .title { border-bottom: 1px solid #fff; font-size: 22px; line-height: 50px; text-align: center; color: #9d000d;}
+.mask .rules-text { padding: 30px 15px 40px; font-size: 14px; line-height: 24px; text-align: justify; }
+.mask .tips { font-size: 12px; line-height: 34px; text-align: center; border-bottom: 1px solid #fff; }
+.mask a { display: block; width: 6%; margin: 18px auto; }
