@@ -5,6 +5,9 @@
 	var run = 0;
 		
 	$(function() {	
+		//关闭弹窗
+		fnBtnClose();
+		
 		// 验证码事件
 		$oBtnReg.on('click',function(){
 			if($('.phone').val()!=""){
@@ -29,6 +32,14 @@
 			clearInterval(interval);
 			run = 0;
 		}
+	}
+	
+	function fnBtnClose(){
+		var $qrCode = $('#code-share');
+		var $oBtnClose = $qrCode.find('.code-close');
+		$oBtnClose.on('click',function(){
+			$qrCode.hide();
+		});
 	}
 	
 })();

@@ -1,0 +1,15 @@
+.content .content-box { position: relative; }
+.content .content-box a{ position: absolute; display: block; width: 34%; height: 4%; }
+.content .content-box .btn01 { top: 30.4%; left: 58.6%; }
+.content .content-box .btn02 { width: 30%; top: 51.4%; left: 12%; }
+.content .content-box .btn03 { top: 71.6%; left: 61.6%; }
+.content .content-box .btn04 { width: 35%; top: 90.6%; left: 6%; }
+.content .content-box a.cake { width: 50%; height: 18%; background-color: red; opacity: .5; }
+.content .content-box .cake01 { top: 16%; left: 6%; }
+.content .content-box .cake02 { top: 36%; left: 46%; }
+.content .content-box .cake03 { top: 56%; left: 6%; }
+.content .content-box .cake04 { top: 80%; left: 46%; }
+
+.content .rules{ padding: 6%; background-color: #3d3d38; color: #edead3; text-align: justify; }
+.content dt{ width: 30%; margin-bottom: 10px; }
+.content dd{ margin-left: 2%; line-height: 18px; }

@@ -5,7 +5,7 @@ body{ height: 100%;}
 
 .container { position: relative; height: 100%; background: url(../img/dinosaur-park/body_bg.jpg) no-repeat top center; background-size: cover;}
 
-.content { position: absolute; top: 50%; left: 13%; width: 74%; z-index: 9999; }
+.content { position: absolute; top: 50%; left: 13%; width: 74%; z-index: 999; }
 .content .tel, .verification input, .verification .btn-reg { height: 44px; background-color: #fff; border: 2px #597fae solid; margin-bottom: 8px; border-radius: 6px; font-size: 16px; color: #515151; }
 .content .tel i { float: left; display: inline-block; width: 18px; height: 28px; background: url(../img/dinosaur-park/icon_phone.png) no-repeat; background-size: contain; margin: 8px 6%; }
 .content .tel input { float: left; width: 76%; height: 30px; border: 0px; margin-top: 8px; font-size: 16px; line-height: 30px; color: #515151; }
@@ -17,3 +17,8 @@ body{ height: 100%;}
 .bottom p { width: 40%; margin: 0 auto 14px; }
 .bottom a{ display: block; width: 100%; height: 50px; background-color: #1e4b8c; font-size: 16px; line-height: 50px; text-align: center; color: #fff; }
 
+#code-share { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.90); z-index: 9999; display: block; }
+#code-share div { width: 60%; margin: 40% auto 0; }
+#code-share div img { width: 100%; }
+#code-share p { text-align: center; margin-top: 10px; color: #fff; }
+#code-share .close { position: absolute; top: .5rem; left: .5rem; line-height: 2rem; font-size: 3rem; font-style: normal; color: #fff; }
