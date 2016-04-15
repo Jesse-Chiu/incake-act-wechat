@@ -13,3 +13,24 @@
 .content .rules dl { float: left; width:64%; color: #edead3; }
 .content .rules dt { font-size: 14px; line-height: 20px; }
 .content .rules dd { text-align: justify; line-height: 16px; }
+
+/* 遮罩层 */
+#popup-mask { width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#popup-mask .popup-info { width: 90%; border-radius: 5px; max-width: 500px; background: #fff; margin: auto; position: absolute; top: 40%; margin-top: -50px; left: 0; right: 0; z-index: 9999; overflow: hidden; }
+#popup-mask .mask-title { width: 96%; height: 40px; padding-left: 4%; line-height: 40px; text-align: left; background: #e6e6e6; color: #fff; }
+#popup-mask .mask-content { width: 100%; }
+.mask-content .box-left, .mask-content .box-right { width: 100%; float: left; }
+
+.mask-content .box-left { position: relative; }
+.mask-content .box-left input { display: block; width:76%; height: 30px; padding-left: 4%; border: 1px #dcdcdc solid; margin:12px auto; border-radius: 10px; font-size: 14px; }
+.mask-content .box-left .btn-reg { position: absolute; top: 12px; left: 62%; display: inline-block; width: 28%; height: 32px; background-color: #88afcd; border-radius: 0 10px 10px 0; font-size: 14px; text-align: center; line-height: 32px; color: #fff; }
+
+.mask-content .box-right .desc { width: 100%; margin: 10px 0; }
+.mask-content .box-right .desc .tips { margin-bottom: 10px; font-size: 24px; line-height: 30px; text-align: center; color: #52c892; }
+.mask-content .box-right .desc>div { width: 70%; margin: 0 auto; }
+.mask-content .box-right .desc>div span { display: inline-block; width: 50%; font-size: 14px; text-align: left; color: #A54D38; }
+.mask-content .box-right .desc>div .text { text-align: right; color: #515151; }
+.mask-content .btn { height: 36px; width: 80%; margin: 20px auto; }
+.mask-content .btn a { display: block; width: 48%; height: 100%; margin: 0 auto; text-align: center; line-height: 36px; font-size: 14px; color: #fff; border-radius: 10px; }
+.btnReceive, .btnBuy { float: left; background: #4694d2; }
+.btnClose{ float: right; background: #0055A2; }
