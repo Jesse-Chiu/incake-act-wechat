@@ -1,32 +1,33 @@
-.content .text { width: 82%; margin: 10px auto; line-height: 18px; text-align: justify; text-indent: 2em; color: #b8d583; }
+.content { background: url(../img/mothers-day-gaw/bg.jpg); }
+.content .text { width: 82%; margin: 10px auto; line-height: 18px; text-align: justify; text-indent: 2em; color: #866f58; }
 .content .banners { position: relative; }
 .content .banners a.cake { position: absolute; display: block; }
 .content .banners a.btn-go { position: absolute; display: block; width: 12%; }
-.banner01 .cake { top: 36%; left: 16%; width: 70%; height: 44%; }
+.banner01 .cake { top: 42%; left: 20%; width: 66%; height: 40%; }
 .banner01 .btn-go { bottom: 1%; left: 64%; }
-.banner02 .cake { top: 0; left: 16%; width: 68%; height: 66%; }
-.banner02 .btn-go { bottom: 6%; left: 58%; }
-.content dl { width: 88%; padding: 6%; background-color: #95af65; color: #000; }
+.banner02 .cake { top: 1%; left: 16%; width: 68%; height: 70%; }
+.banner02 .btn-go { bottom: 0; left: 58%; }
+.content dl { width: 88%; padding: 6%; color: #333; }
 .content dt { margin-bottom: 12px; font-size: 16px; line-height: 16px; text-align: center; }
 .content dd { font-size: 12px; line-height: 18px; text-align: justify; }
 
-#frm-register.section { width: 100%; }
+#frm-register.section { width: 100%; padding-bottom: 1%; }
 #frm-register .sec-header { width: 100%; }
 #frm-register .sec-header .sec-title { position: relative; width: 98%; height: 40px; margin: 10px auto; background: url(../img/mothers-day-gaw/title_bg.png) repeat-x; }
 #frm-register .sec-header .sec-title span { display: inline-block; position: absolute; left: 50%; padding: 0 20px; line-height: 40px; color: #999; background-color: #f5f5f5; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 #frm-register .sec-body { width: 100%; }
 
-#frm-register .sec-header .sec-title span { color: #f1b601; font-size: 16px; background-color: #fff; }
+#frm-register .sec-header .sec-title span { color: #f1b601; font-size: 16px; background: url(../img/mothers-day-gaw/bg.jpg); }
 #frm-register .sec-body { width: 75%; margin: 0 auto; }
 #frm-register .sec-body li { margin-bottom: 10px; position: relative; }
 #frm-register .sec-body li input { display: block; height: 40px; line-height: 40px; text-indent: 3em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; }
 #frm-register .sec-body li .txt-mobile { float: left; width: 60%; border-radius: 5px 0 0 5px; }
-#frm-register .sec-body li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #ddd; border-radius: 0 5px 5px 0; color: #fff; background-color: #95af65; }
+#frm-register .sec-body li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #ddd; border-radius: 0 5px 5px 0; color: #fff; background-color: #ee9b4b; }
 #frm-register .sec-body li a { font-size: 12px; }
 #frm-register .sec-body li .txt-vcode { width: 100%; }
 #frm-register .sec-body li .icon-mobile { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url(../img/mothers-day-gaw/icon_mobile.png) no-repeat; background-size: contain; background-position: left center;  }
 #frm-register .sec-body li .icon-vcode { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url(../img/mothers-day-gaw/icon_vcode.png) no-repeat; background-size: contain; background-position: left center;  }
-#frm-register #btn-register { display: block; width: 100%; height: 42px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #95af65; color: #fff; margin-bottom: 40px; }
+#frm-register #btn-register { display: block; width: 100%; height: 42px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #ee9b4b; color: #fff; margin-bottom: 40px; }
 
 #float-footer { position: fixed; bottom: 0; left: 0; z-index: 9999; width: 100%; }
 #float-footer img { width: 100%; }
