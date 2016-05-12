@@ -1,0 +1,64 @@
+.content{ background-color: #fcf9f2; }
+
+.page01 .infos p { width: 100%; text-align: center; color: #344558; }
+.page01 .infos .tips { margin-top: 10px; font-size: 26px; line-height: 26px; font-weight: 300; }
+.page01 .infos .tips span { display: inline-block; padding: 0 4px; background-color: #293645; margin: 0 6px; font-size: 36px; line-height: 28px; color: #fff; vertical-align: text-bottom; font-family:ds-digitalbold; }
+.page01 .infos .text { font-size: 16px; line-height: 36px; font-weight: 200; }
+.page01 .infos .text span { font-weight: bold; }
+.page01 .infos .time { font-size: 14px; line-height: 16px; }
+.page01 .btnBuy { display: block; width: 52%; margin: 0 auto; background-color: #1882a1; border-radius: 20px; font-size: 22px; line-height: 40px; font-weight: 200; color: #fff; text-align: center; }
+.page01 .time-next { width: 30%; margin: 30px auto 0; }
+.page01 .time-next img { display: block; }
+.page01 .time-next p { width: 100%; background-color: #334457; font-size: 14px; line-height: 18px; text-align: center; color: #fff;  }
+.page01 .time-next p.text { padding-top: 4px; } 
+.page01 .addr { position: absolute; top: 46px; left: 14px; width: 90%; }
+.page01 .addr img { float: left; width: 14px; }
+.page01 .addr span { float: left; margin-left: 4px; font-size: 14px; line-height: 14px; color: #505050; }
+
+.page02{ padding-bottom: 26%; }
+.page02 .tip { width: 58%; padding-left: 8%; background: url(../img/celebrate-nj/icon_true.png) no-repeat left center; background-size: contain; margin: 5% auto 0; font-size: 14px; line-height: 26px; color: #1882a1; }
+.page02 ul { width: 80%; margin: 5% auto; }
+.page02 ul li { width: 100%; height: 46px; border: 1px solid #334457; margin-bottom: 10px; }
+.page02 ul input { width: 90%; padding-left: 4%; background: transparent; border: 0; font-size: 20px; line-height: 46px; }
+.page02 ul .li-phone input { float: left; width: 62%; }
+.page02 ul .li-phone a { display: inline-block; float: right; width: 34%; background-color: #7b97a7; font-size: 16px; line-height: 46px; color: #fff; text-align: center; }
+.page02 .btnSubmit { display: block; width: 80%; margin: 0 auto; background-color: #1882a1; font-size: 22px; line-height: 46px; font-weight: 200; color: #fff; text-align: center; }
+
+.page03 { color: #334457; padding-bottom: 8%; }
+.page03 .tips { width: 90%; padding: 12% 0; margin: 0 auto; border-bottom: 1px solid #334457; }
+.page03 .tips p { font-size: 16px; line-height: 16px; text-align: center; }
+.page03 .tips p.status { margin-bottom: 12px; font-size: 24px; line-height: 24px; font-weight: bold; }
+.page03 .thanks { width: 80%; font-size: 14px; line-height: 20px; margin: 6% auto 2%; text-align: justify; }
+.page03 .regist-info { width: 70%; margin: 0 auto; padding: 18px 0; background-color: #e1e5e3; }
+.page03 .regist-info p { width: 74%; margin: 0 auto; font-size: 16px; line-height: 24px; text-align: center; }
+.page03 .regist-info p span { display: inline-block; width: 50%; margin-left: 2%; text-align: left; }
+.page03 .info { font-size: 14px; line-height: 40px; text-align: center; }
+.page03 .btnShare { display: block; width: 70%; margin: 4% auto 0; background-color: #1882a1; border-radius: 20px; font-size: 16px; line-height: 40px; color: #fff; text-align: center; }
+
+/* 分享弹窗 */
+#popup-show, 
+#popup-share { position: fixed; top: 0; left: 0; z-index: 999; display: none; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+#popup-show { display: block; }
+#popup-show p,
+#popup-show a,
+#popup-share p,
+#popup-share dl { position: absolute; top: 0; left: 0; z-index:9999; width: 100%; }
+#popup-show p { width: 76%; top: 26%; left: 12%; }
+#popup-show a { width: 8%; top: 27%; left: 78%; }
+#popup-show img,
+#popup-share img{ width: 100%; }
+#popup-share dl { top: 36%; left: 10%; width: 80%; color: #fff; }
+#popup-share dt { font-size: 18px; line-height: 26px; }
+#popup-share dd { font-size: 14px; line-height: 20px; text-align: justify; }
+ 
+@font-face {
+    font-family: 'ds-digitalbold';
+    src: url('../fonts/ds-digib-webfont.eot');
+    src: url('../fonts/ds-digib-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ds-digib-webfont.woff2') format('woff2'),
+         url('../fonts/ds-digib-webfont.woff') format('woff'),
+         url('../fonts/ds-digib-webfont.ttf') format('truetype'),
+         url('../fonts/ds-digib-webfont.svg#ds-digitalbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
