@@ -1,0 +1,9 @@
+header .logo-my{ width: 40%; height: 30px; margin-left: 6px; }
+.content{ background: url(../img/childrens-day/body_bg.jpg); }
+.content .cake{ position: relative; width: 64%; margin: -14% 0 -2% 2%; }
+.content .cake a{ position: absolute; top:64%; left: 82%; display: block; width: 30%; }
+.content .banner02 { display: block; width: 90%; margin: 0 auto 6%; }
+.content dl{ width: 84%; margin: 0 auto; padding: 22px 0; text-align: justify; }
+.content dt{ margin-bottom: 6px; line-height: 18px; font-size: 18px; color: #666; text-shadow: 0 0 1px #fbcc00; }
+.content dd{ line-height: 20px; color: #003242; }
+.content dd span{ color: #c72031; }
