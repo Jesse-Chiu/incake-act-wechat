@@ -1,0 +1,37 @@
+.content{ background: url(../img/supermaca/bg.jpg); overflow-x: hidden; }
+.content .title { padding: 20px 0 10px; }
+.content .title img { position: relative; width: 120%; left: -120%; }
+.content .package { position: relative; }
+.content .package .cheers { position: absolute; top: 30%; left: 0; width: 30%; }
+.content .package a img { margin: 20px auto; }
+.content .cakelist { width: 85%; margin: 0 auto; }
+.content .cakelist li { position: relative; width: 100%; margin-bottom: 24px; }
+.content .cakelist li a { position: absolute; display: block; width: 33.4%; }
+.content .cakelist li a.btn01 { top: 56%; left: 60%; }
+.content .cakelist li a.btn02 { top: 58%; left: 6%; }
+.content .cakelist li a.btn03 { top: 60%; left: 66%; }
+
+.content .rules { width: 88%;padding: 26px 6%; background-color: #455570; text-align: justify; color: #fff; }
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; text-align: center; }
+.content .rules dd{ line-height: 20px; }
+
+#frm-register.section { width: 100%; padding:10px 0 40px; background-color: #f3d6c8; }
+#frm-register .sec-header { width: 100%; }
+#frm-register .sec-header .sec-title { position: relative; width: 98%; height: 40px; margin: 0 auto 10px; background: url(../img/supermaca/title_bg.png) repeat-x; }
+#frm-register .sec-header .sec-title span { display: inline-block; position: absolute; left: 50%; padding: 0 20px; line-height: 40px; color: #999; background-color: #f5f5f5; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+#frm-register .sec-body { width: 100%; }
+
+#frm-register .sec-header .sec-title span { color: #5f443b; font-size: 16px; background-color: #f3d6c8; }
+#frm-register .sec-body { width: 75%; margin: 0 auto; }
+#frm-register .sec-body li { position: relative; margin-bottom: 10px;}
+#frm-register .sec-body li input { display: block; height: 40px; line-height: 40px; text-indent: 3em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; }
+#frm-register .sec-body li .txt-mobile { float: left; width: 60%; border-radius: 5px 0 0 5px; }
+#frm-register .sec-body li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #ddd; border-radius: 0 5px 5px 0; color: #fff; background-color: #ed6e70; }
+#frm-register .sec-body li a { font-size: 12px; }
+#frm-register .sec-body li .txt-vcode { width: 100%; }
+#frm-register .sec-body li .icon-mobile { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url(../img/supermaca/icon_mobile.png) no-repeat; background-size: contain; background-position: left center;  }
+#frm-register .sec-body li .icon-vcode { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url(../img/supermaca/icon_vcode.png) no-repeat; background-size: contain; background-position: left center;  }
+#frm-register #btn-register { display: block; width: 100%; height: 42px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #ed6e70; font-size: 14px; color: #fff; }
+
+#float-footer { position: fixed; bottom: 0; left: 0; z-index: 9999; width: 100%; }
+#float-footer img { width: 100%; }
