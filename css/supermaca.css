@@ -11,9 +11,10 @@
 .content .cakelist li a.btn02 { top: 58%; left: 6%; }
 .content .cakelist li a.btn03 { top: 60%; left: 66%; }
 
-.content .rules { width: 88%;padding: 26px 6%; background-color: #455570; text-align: justify; color: #fff; }
-.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; text-align: center; }
-.content .rules dd{ line-height: 20px; }
+.content .rules { width: 82%;padding: 26px 9%; background-color: #455570; text-align: justify; color: #fff; }
+.content .rules dt { width: 30%; margin: 0 auto 16px; }
+.content .rules .rule-title { margin:10px 0; line-height: 30px; font-size: 18px; }
+.content .rules dd{ text-align: center; line-height: 20px; }
 
 #frm-register.section { width: 100%; padding:10px 0 40px; background-color: #f3d6c8; }
 #frm-register .sec-header { width: 100%; }
