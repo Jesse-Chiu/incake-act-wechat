@@ -1,0 +1,16 @@
+.content{ background: url(../img/fathers-day/bg.jpg); }
+.content .title { width: 84%; margin: 0 auto; text-align: center; }
+.content .title p { background-color: #323848; font-size: 24px; line-height: 50px; color: #b9385c; }
+.content .title p span { font-weight: bold; }
+.content .title .times { line-height: 20px; color: #323848; }
+.content .package { position: relative; }
+.content .package a { position: absolute; bottom: 11%; left: 47%; width: 18.4%; }
+.content .package01 a { bottom: 0; left: 74%; }
+.content .package02 { margin-top: -18%; }
+.content .package02 a { bottom: 6%; left: 6%; }
+
+.content .rules { width: 84%;padding: 26px 8%; background-color: #455570; color: #fff; }
+.content .rules dt { margin:10px 0; line-height: 30px; font-size: 18px; }
+.content .rules dd{ font-size: 14px; line-height: 20px; text-align: justify; }
+.content .rules .img { width: 30%; text-align: center; margin: 16px auto; }
+.content .rules .tips { font-size: 12px; text-align: center; }
