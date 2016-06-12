@@ -1,0 +1,17 @@
+.content{ background: url(../img/disney/bg.jpg); }
+.content .title { position: relative; padding-top: 30px; }
+.content .title a { position: absolute; top: 52%; left: 65%; display:block; width: 27%; }
+
+.content .cake-info { position: relative; }
+.content .cake-info .mickey { width: 50%; margin: 24% 0 0 4.6%; }
+.content .cake-info .cake { position: absolute; top: 3%; left: 40%; width: 49%; }
+.content .cake-info p { position: absolute; top: 62%; left: 48%; width: 52%; }
+
+.content .prize-exchange { margin: 10% auto 22%; }
+.content .prize-exchange .method { display: block; width: 58%; margin: 20px auto 0; }
+
+.content .rules { position: relative; }
+.content .rules img { position: absolute; top: -14%; left: 10%; display: block; width: 26%; }
+.content .rules dl{ width: 84%;padding: 26px 8%; background-color: #4d4d4d; color: #fff; }
+.content .rules dt { margin-bottom:10px; line-height: 24px; font-size: 16px; }
+.content .rules dd{ font-size: 14px; line-height: 20px; text-align: justify; }
