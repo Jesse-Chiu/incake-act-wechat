@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<title>INCAKE童话季活动</title>
+		<link rel="stylesheet" type="text/css" href="css/common_b.css"/>
+		<link rel="stylesheet" type="text/css" href="css/luck-draw.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="img/logo_b.png" />
+			<a href="http://wap.incake.net"><img src="img/return_b.png"/><span>返回首页</span></a>
+		</header>
+		
+		<div class="content">
+			<img src="img/luck-draw/banner.png"/>
+			<div class="orders">
+				<img src="img/luck-draw/content_bg.jpg"/>
+				<p class="tips hide"><img src="img/luck-draw/tip_icon.png"/><span></span>输入错误，请核对后重新输入</p>
+				<div class="order-info">
+					<p class="clearfix"><span>订单编号：</span><input type="number" placeholder="请输入订单号" /></p>
+					<p class="clearfix"><span>手机号：</span><input type="number" placeholder="请输入您的手机号码" /></p>
+					<a href="javascript:;" id="btn-lottery">抽&nbsp;&nbsp;奖</a>
+				</div>
+			</div>
+			<div class="gift hide">
+				<img src="img/luck-draw/gift_bg.jpg"/>
+				<img src="img/luck-draw/gift01.png" class="gift-img img01"/>
+				<img src="img/luck-draw/gift02.png" class="gift-img img02"/>
+			</div>
+			<dl class="rules">
+				<dt>活动规则</dt>
+				<dd>1.活动期间，在INCAKE正价或者微信9折订购1磅以上蛋糕（不含活动款），并选择活动时间内进行配送，即可获得一次免费抽奖机会；</dd>
+				<dd>2.抽奖中奖率为100%，所有抽到的商品将同订购的蛋糕一同配送到用户手中。（电子券产品将于配送完成后发送到用户账户）；</dd>
+				<dd><span>3.每个订单号限抽一次，抽奖有效期为下单之日起至当晚24点，过期作废；</span></dd>
+				<dd>4.本活动不与其他活动优惠同享，可使用微信9折，但不可使用优惠券代金卡，活动款蛋糕不参加此优惠；</dd>
+				<dd>5.活动时间：6月15日-6月29日；</dd>
+				<dd>6.配送时间：6月17日-7月01日；</dd>
+				<dd>7.本活动仅限上海苏州昆山福州厦门南京北京无锡地区。</dd>
+			</dl>
+			
+		</div>
+		
+		<footer>
+			<img src="img/QrCode_b.jpg" />
+			<p>微信号：InCake_2012</p>
+			<p class="phone">400-921-5757</p>
+		</footer>
+		
+		<!-- 抽奖弹窗 -->
+		<div id="popup-show">
+			<div class="popup-content">
+				<a href="javascript:;" class="go-lottery"><img src="img/luck-draw/popup_gift.png"/></a>
+			</div>
+		</div>
+		<!-- 获奖弹窗 -->
+		<div id="prize-show">
+			<div class="prize-content prize01 hide">
+				<a href="javascript:;" class="btn-close"><img src="img/luck-draw/btn-close.png"/></a>
+				<p class="title">恭喜您，获得<span>XXXX</span>一个！</p>
+				<p class="text">本产品已加入您的订单中并与蛋糕一同配送！</p>
+				<a href="javascript:;" class="btn btn-select">查询订单信息</a>
+			</div>
+			<div class="prize-content prize02 hide">
+				<a href="javascript:;" class="btn-close"><img src="img/luck-draw/btn-close.png"/></a>
+				<p class="title"><img src="img/luck-draw/prize_80.png"/></p>
+				<p class="text">恭喜您，获得INCAKE80元蛋糕券一张!本产品将于配送完成后，发送到您的账户，可在个人中心查看！</p>
+				<a href="javascript:;" class="btn btn-ok">确&nbsp;&nbsp;定</a>
+			</div>
+		</div>
+		
+		<!-- javascript begin -->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <script src="js/luck-draw.js"></script>
+	    <!-- javascript end -->
+		
+	</body>
+</html>
