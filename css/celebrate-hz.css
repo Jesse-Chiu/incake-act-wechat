@@ -1,0 +1,17 @@
+@charset "UTF-8";
+html { -webkit-tap-highlight-color: transparent;  }
+body { width: 100%; font-family: "Arial","微软雅黑"; font-size: 12px;  }
+body, p, h1, h2, h3, ul, dl, dt, dd, input, select ,textarea { margin: 0; padding: 0; }
+img { border: none; vertical-align: top; }
+
+.content{ width: 100%; background-color: #fcf9f2; }
+.content img { display: block; width: 100%; }
+
+.content .title { padding-top: 20px; }
+.content p { line-height: 40px; text-align: center; color: #334457; }
+.content .cake { margin: 30px auto 20px; }
+.content .text { width: 84%; margin: 0 auto; }
+.content .banner { margin: 20px auto; }
+.content .text02 { width: 60%; margin: 0 auto; }
+.content .qr-code { width: 30%; margin: 10px auto; }
+.content .tips02 { width: 60%; padding-bottom: 30px; margin: 0 auto; }
