@@ -1,0 +1,26 @@
+.content{ width: 100%; background: url(../img/car-share/bg.jpg); }
+.content img { display: block; width: 100%; }
+
+.content .title { position: relative; padding: 20px 0 30px; }
+.content .title .seal { position: absolute; top: 65%; left: 23%; width: 55%; }
+
+.content .buttonBox { width: 34%; margin: 14px 0 14px 40%; }
+.content .buttonBox a { float: left; display: block; width: 48%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+.content .buttonBox span { float: right; display: block; width: 48%;}
+
+.content .cakeBox { width: 70%; margin: 10px auto 20px; }
+
+.content .rules { width: 80%;padding: 16px 10%; background: url(../img/car-share/rule_bg.png); color: #e6e6e6; }
+.content .rules dt { margin-bottom:8px; line-height: 16px; font-size: 16px; text-align: center; }
+.content .rules dd{ font-size: 14px; line-height: 20px; text-align: justify; }
+
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.2); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
