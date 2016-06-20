@@ -1,0 +1,17 @@
+@charset "UTF-8";
+html { -webkit-tap-highlight-color: transparent;  }
+body { width: 100%; font-family: "Arial","微软雅黑"; font-size: 12px;  }
+body, p, h1, h2, h3, ul, dl, dt, dd, input, select ,textarea { margin: 0; padding: 0; }
+img { border: none; vertical-align: top; }
+
+.content{ width: 100%; padding-bottom: 30px; background: url(../img/half-sunday/bg.jpg); }
+.content img { display: block; width: 100%; }
+
+.content .banner { padding-top: 30px; }
+.content .cake { margin: 6px auto 20px; }
+.content p { font-size: 14px; line-height: 20px; text-align: center; color: #334457; }
+.content p.title { font-size: 18px; line-height: 40px; font-weight: bold; text-align: center; color: #334457; }
+.content p.tips2 { font-size: 12px; }
+.content p.tips2 span { color: #c90000; }
+.content .arrow-down { width: 5%; margin: 10px auto; }
+.content .qr-code { width: 26%; margin: 10px auto; }
