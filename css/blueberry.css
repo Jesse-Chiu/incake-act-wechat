@@ -1,0 +1,69 @@
+.content{ background: #fff url(../img/blueberry/bg.jpg); }
+.content .cakeList { position: relative; margin: 34% auto 10px; }
+.content .cakeList a{ position: absolute; top: -37%; left: 8%; display: block; width: 32%; -webkit-transform-origin:80% bottom; -moz-transform-origin:80% bottom; -ms-transform-origin:80% bottom; -o-transform-origin:80% bottom; transform-origin:80% bottom; -webkit-animation: shake 3s infinite; -moz-animation: shake 3s infinite; -ms-animation: shake 3s infinite; -o-animation: shake 3s infinite; animation: shake 3s infinite; }
+.content .desc { padding: 16px 0 50px; }
+
+#frm-register.section { width: 100%; padding: 10px 0 40px; background-color: #425670; }
+#frm-register .sec-header { width: 100%; }
+#frm-register .sec-header .sec-title { position: relative; width: 98%; height: 40px; margin: 0 auto 10px; background: url(../img/blueberry/title_bg.png) repeat-x; }
+#frm-register .sec-header .sec-title span { display: inline-block; position: absolute; left: 50%; padding: 0 20px; line-height: 40px; color: #999; background-color: #f5f5f5; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+#frm-register .sec-body { width: 100%; }
+
+#frm-register .sec-header .sec-title span { color: #fff; font-size: 16px; background-color: #425670; }
+#frm-register .sec-body { width: 75%; margin: 0 auto; }
+#frm-register .sec-body li { margin-bottom: 10px; position: relative; }
+#frm-register .sec-body li input { display: block; height: 40px; background: transparent; line-height: 40px; text-indent: 3em; -webkit-appearance: none; border: 1px solid #fff; border-radius: 5px; outline: none; font-size: 12px; }
+#frm-register .sec-body li .txt-mobile { float: left; width: 60%; border-radius: 5px 0 0 5px; }
+#frm-register .sec-body li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #fbedcf; border-radius: 0 5px 5px 0; color: #425670; background-color: #fff; }
+#frm-register .sec-body li a { font-size: 12px; }
+#frm-register .sec-body li .txt-vcode { width: 100%; }
+#frm-register .sec-body li .icon-mobile { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url(../img/blueberry/icon_mobile.png) no-repeat; background-size: contain; background-position: left center;  }
+#frm-register .sec-body li .icon-vcode { position: absolute; width: 6%; height: 100%; margin-left: 3%; background: url(../img/blueberry/icon_vcode.png) no-repeat; background-size: contain; background-position: left center;  }
+#frm-register #btn-register { display: block; width: 100%; height: 42px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #e4555f; color: #fff; }
+
+#float-footer { position: fixed; bottom: 0; left: 0; z-index: 9999; width: 100%; }
+#float-footer img { width: 100%; }
+
+::-webkit-input-placeholder{
+   color: #fff;
+}
+::-ms-input-placeholder{
+   color: #fff;
+}
+::-moz-placeholder{
+   color: #fff;
+}
+::-moz-placeholder{
+   color: #fff;
+}
+
+@-webkit-keyframes shake /* Safari 和 Chrome */
+{
+	0% { -webkit-transform: rotate(0deg); }
+	50% {-webkit-transform: rotate(24deg); }
+	100% {-webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes shake /* Firefox */
+{
+	0% {-moz-transform: rotate(0deg); }
+	50% {-moz-transform: rotate(24deg); }
+	100% {-moz-transform: rotate(0deg); }
+}
+@-ms-keyframes shake
+{
+	0% {-ms-transform: rotate(0deg); }
+	50% {-ms-transform: rotate(24deg); }
+	100% {-ms-transform: rotate(0deg); }
+}
+@-o-keyframes shake
+{
+	0% {-o-transform: rotate(0deg); }
+	50% {-o-transform: rotate(24deg); }
+	100% {-o-transform: rotate(0deg); }
+}
+@keyframes shake
+{
+	0% {transform: rotate(0deg); }
+	50% {transform: rotate(24deg); }
+	100% {transform: rotate(0deg); }
+}
