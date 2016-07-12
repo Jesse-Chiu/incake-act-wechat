@@ -16,7 +16,7 @@
 #frm-register .sec-header .sec-title span { color: #fff; font-size: 16px; background-color: #425670; }
 #frm-register .sec-body { width: 75%; margin: 0 auto; }
 #frm-register .sec-body li { margin-bottom: 10px; position: relative; }
-#frm-register .sec-body li input { display: block; height: 40px; background: transparent; line-height: 40px; text-indent: 3em; -webkit-appearance: none; border: 1px solid #fff; border-radius: 5px; outline: none; font-size: 12px; }
+#frm-register .sec-body li input { display: block; height: 40px; background: transparent; line-height: 40px; text-indent: 3em; color: #fff; -webkit-appearance: none; border: 1px solid #fff; border-radius: 5px; outline: none; font-size: 12px; }
 #frm-register .sec-body li .txt-mobile { float: left; width: 60%; border-radius: 5px 0 0 5px; }
 #frm-register .sec-body li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #fbedcf; border-radius: 0 5px 5px 0; color: #425670; background-color: #fff; }
 #frm-register .sec-body li a { font-size: 12px; }
