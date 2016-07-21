@@ -1,0 +1,19 @@
+@charset "UTF-8";
+html { -webkit-tap-highlight-color: transparent;  }
+body { width: 100%; font-family: "Arial","微软雅黑"; font-size: 12px;  }
+body, p, ul { margin: 0; padding: 0; }
+img { border: none; vertical-align: top; }
+
+.content{ width: 100%; background: url(../img/vango-hz/bg.jpg); }
+.content img { display: block; width: 100%; }
+
+.content .banner, .content .title { margin-bottom: 30px; }
+.content .cake { margin: 6px auto 20px; }
+
+.content ul li { position: relative; list-style: none; }
+.content li a { position: absolute; top: 64%; right: 4%; display: inline-block; width: 22%; border: 1px solid #c82739; font-size: 16px; line-height: 32px; text-align: center; color: #c82739; text-decoration: none; border-radius: 8px;  }
+
+.content .footer { padding-bottom: 30px; background-color: #f5f5f5; }
+.content .footer a { display: block; width: 94%; margin: 10px auto 36px; }
+.content .footer .qr-code { width: 40%; margin: 0 auto; }
+.content .footer .tips { margin-top: 10px; font-size: 16px; line-height: 16px; color: #6c6c6c; text-align: center; }
