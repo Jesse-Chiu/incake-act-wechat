@@ -1,0 +1,35 @@
+.content{ background-color: #fff8e7; }
+.content .cakes { position: relative; padding-top: 24%; }
+.content .cakes a { position: absolute; top: 6%; right: 5%; 
+					display:block; width: 24%; 
+					-webkit-transform-origin:left bottom; 
+					transform-origin:left bottom; 
+					-webkit-animation: shake 3s infinite;
+					animation: shake 3s infinite;  
+				 }
+.content .cakes .tips { position: absolute; top: -4%; left: 8%; display:block; width: 51%; 
+						-webkit-transform-origin:right bottom; 
+						transform-origin:right bottom; 
+						-webkit-animation: 1.75s smooth; animation: 1.75s smooth;
+					  }
+
+@-webkit-keyframes shake /* Safari 和 Chrome */
+{
+	0% { -webkit-transform: rotate(0deg); }
+	50% {-webkit-transform: rotate(12deg); }
+	100% {-webkit-transform: rotate(0deg); }
+}
+@keyframes shake
+{
+	0% {transform: rotate(0deg); }
+	50% {transform: rotate(-24deg); }
+	100% {transform: rotate(0deg); }
+}
+@-webkit-keyframes smooth {
+	from { -webkit-transform: scale(1); }
+	to { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	from { transform: scale(0); }
+	to { transform: scale(1); }
+}
