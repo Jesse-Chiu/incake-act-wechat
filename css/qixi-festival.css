@@ -3,8 +3,7 @@
 .content .banners a { position: absolute; bottom: 1.42%; left: 37.5%; display: block; width: 27%; height: 4%; }
 .content .box { position: relative; margin-bottom: 10%; }
 .content .box a { position: absolute; top: 70%; left: 58%; display: block; width: 10%; }
-.content .box02 a { top: 77%; left: 66%; }
-.content .box03 a { top: 82%; left: 67%; }
+.content .box02 a { top: 82%; left: 67%; }
 .content .notice { width: 70%; margin: -4% auto 4%; }
 .content .qr-code { width: 30%; margin: 0 auto 8%; }
 .content dl { width: 80%; padding: 6% 10%; background-color: #505050; color: #fff; text-align: justify; }
