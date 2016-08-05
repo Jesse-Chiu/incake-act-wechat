@@ -1,0 +1,4 @@
+.content { background-color: #e5edf8; }
+.content .banners { position: relative; }
+.content .banners a { position: absolute; bottom: -6px; left: 40%; display: block; width: 26%; background-color: #b09169; line-height: 24px; text-align: center; color: #fff; }
+.content .info { margin-bottom: 10%; }
