@@ -1,0 +1,21 @@
+.content { background-color: #faf4db; color: #6a6052; }
+
+.content .banners { position: relative; }
+.content .banners a { position: absolute; top: 4%; right: 2%; display: inline-block; width: 15%; text-align: center; }
+.content .banners a img { width: 20px; height: 20px; }
+.content .banners a span { display: block; line-height: 18px; color: #0055a2; }
+
+.content .information { width: 78%; margin: 10px auto; font-size: 16px; line-height: 28px; text-align: center; }
+.content .cherry { display: block; width: 15%; margin-left: 10%; }
+
+.content .cakes { position: relative; width: 60.6%; margin: 16% auto 0; }
+.content .cakes a { position: absolute; top: -22%; right: -12%; display: inline-block; width: 28%; }
+
+.content .rules { margin-bottom: 20px; }
+.content .rules dt{ width: 28%; margin-bottom: 20px; }
+.content .rules dd{ padding: 0 10px; font-size: 14px; line-height: 24px; text-align: justify; }
+.content .rules dd span { color: #e00011; }
+
+.content .method { width: 88%;padding: 26px 6%; background-color: #6a6052; text-align: justify; color: #fff; }
+.content .method dt{ margin-bottom: 4px; line-height: 30px; font-size: 14px; }
+.content .method dd{ line-height: 20px; }
