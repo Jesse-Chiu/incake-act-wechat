@@ -1,0 +1,8 @@
+.content { background-color: #f0f3f8; }
+.content .banners { position: relative; margin-bottom: -2%; }
+.content .banners a{ position: absolute; bottom: 0; left: 49.4%; display: block; width: 25%; height: 4.2%; }
+.content .mooncakes { margin: 8% auto; }
+
+.content .rules { width: 88%;padding: 26px 6%; background-color: #5f453e; text-align: center; color: #fff; }
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; }
+.content .rules dd{ line-height: 20px; }
