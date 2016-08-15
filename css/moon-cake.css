@@ -1,0 +1,31 @@
+.content { background-color: #010101; }
+.content i.arrow { position: absolute; top: 0; left: 0; display: block; -webkit-animation: arrow 2s ease infinite; animation: arrow 2s ease infinite; }
+
+.content .moon-box, .content .moon-list { position: relative; }
+.content .moon-box a { position: absolute; bottom: 0; left: 24%; display: block; width: 13.4%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+.content .moon-box i { top: 66%; left: 29%; width: 2%; }
+.content .moon-list i { top: 12.4%; left: 50%; width: 4%; }
+
+.content .rules { display: block; width: 72%;padding: 16px 0 50px; margin: 0 auto; }
+
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.2); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
+@-webkit-keyframes arrow { 
+	0% { margin-top: 0; } 
+	50% { margin-top: -2%; } 
+	100% { margin-top: 0; } 
+}
+@keyframes arrow { 
+	0% { margin-top: 0; } 
+	50% { margin-top: -2%; } 
+	100% { margin-top: 0; } 
+}
