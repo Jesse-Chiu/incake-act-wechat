@@ -1,0 +1,50 @@
+.content { background-color: #c8e28e; }
+.content .banner,
+.content .cakes { position: relative; }
+.content .banner .rotate { position: absolute; bottom: 0; left: 20%; width: 60%; }
+.content .banner .prefect { position: absolute; top: 51%; left: -64%; width: 63.6%; }
+.content .tips { width:64.5%; margin: 16px auto 40px; }
+.content .cakes .flag { position: absolute; top: 0; left: 29%; display: block; width: 54.6%; }
+.content .cakes .speak { position: absolute; top: 30%; left: 3%; display: block; width: 25%; }
+.content .price { display: block; width: 54.8%; margin: 10px auto; }
+.content a.btn-buy { display: block; width: 22.8%; margin: 0 auto; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+.content .information { padding: 30px 0; font-size: 14px; line-height: 30px; color: #fff; text-align: center; }
+.content .information dt { width: 15%; margin: -10% 0 -6% 76%; }
+.content .rules { width: 64%; padding: 26px 18%; background-color: #525252; text-align: center; color: #c8e28e; }
+.content .rules dt{ font-size: 16px; line-height: 30px; }
+.content .rules dd{ line-height: 20px; }
+
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
+
+/* 禁止横屏样式 */
+.mod-orient-layer {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	z-index: 9999
+}
+.mol_content {
+	position: absolute;
+	width: 100%;
+	top: 45%;
+	text-align: center
+}
+.mol_desc {
+	margin-top: 20px;
+	font-size: 15px;
+	font-family: "incake";
+	color: #fff
+}
