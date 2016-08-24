@@ -5,7 +5,39 @@
         fnBindProducts();
         //当日抢购倒计时
         fnCountdown();
+        // 城市定位
+        fnCityLocation();
     });
+    
+    function fnCityLocation(){
+        var $oLocation = $('#cityLocation'),
+            $oTitle = $oLocation.find('>img'),
+            $oPopUp = $oLocation.find('.location-popup'),
+            $aCity = $oPopUp.find('li');
+        var arrImg = ['city_location_sh.png', 'city_location_sz.png', 'city_location_ks.png', 'city_location_fz.png', 'city_location_xm.png', 'city_location_nj.png', 'city_location_bj.png', 'city_location_hz.png', 'city_location_wx.png'];
+
+        $oTitle.on('click', function(){
+            if($oPopUp.hasClass('expand')){
+                $oPopUp.removeClass('expand').fadeOut();
+            }else{
+                $oPopUp.addClass('expand').fadeIn();
+            }
+        });
+
+        // 切换城市
+        $aCity.each(function(i, ele){
+           $(ele).on('click', function(){
+        	   
+               var src = 'img/midautumn-seckill/' + arrImg[i];
+               $oTitle.attr('src', src);
+
+               // TODO 处理城市切换逻辑
+
+               $(this).addClass('active').siblings('li').removeClass('active');
+               $oPopUp.removeClass('expand').delay(100).fadeOut();
+           });
+        });
+    }
 
     // 商品显示
     function fnBindProducts() {
