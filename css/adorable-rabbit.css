@@ -1,0 +1,31 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #f0f3f8; }
+.content .cakes { position: relative; }
+.content .cakes a { position: absolute; bottom: 4px; left: 44%; display: block; width: 28.6%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+.content .cakes .arrow { position: absolute; top: 9%; left: 47%; display: block; width: 4%; -webkit-animation: arrow 2s ease infinite; animation: arrow 2s ease infinite; }
+
+.content .rules { width: 88%;padding: 26px 6%; background-color: #b29652; text-align: center; color: #fff; }
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; }
+.content .rules dd{ line-height: 20px; }
+
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.2); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
+@-webkit-keyframes arrow { 
+	0% { margin-left: 0; } 
+	50% { margin-left: -2%; } 
+	100% { margin-left: 0; } 
+}
+@keyframes arrow { 
+	0% { margin-left: 0; } 
+	50% { margin-left: -2%; } 
+	100% { margin-left: 0; } 
+}
