@@ -1,0 +1,40 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #fff; }
+
+.content #frm-question { width: 94%; margin: 0 auto; }
+
+#frm-question .question { padding: 0 3.4%; margin-bottom: 30px; }
+#frm-question .question .frm-title { position: relative; margin-bottom: 16px; font-size: 14px; line-height: 14px; color: #000; }
+#frm-question .question .frm-title:before { position: absolute; top: 5%; left: -3%; display: block; content: ''; width: 2.8%; height: 14px; background: url(../img/questionnaire/i_star.png) no-repeat; background-size: contain; }
+#frm-question .question a { display: inline-block; color: #000; }
+#frm-question .question a.cur { color: #f24f66; }
+#frm-question .question textarea { width: 93.4%; height: 150px; padding: 1% 3%; border: 1px solid #444; border-radius: 4px; resize: none; font-size: 14px; line-height: 24px; -webkit-appearance: none; }
+
+#frm-question .sex a,
+#frm-question .question02 a { float: left; border: 1px solid #444; border-radius: 4px; font-size: 14px; line-height: 30px; text-align: center; }
+#frm-question .sex a.cur,
+#frm-question .question02 a.cur { border: 1px solid #f24f66; }
+#frm-question .sex a { width: 16%; margin-right: 10.6%; }
+#frm-question .question01 { margin-bottom: 16px; }
+#frm-question .question01 li { float: left; width: 48%; margin: 0 4% 14px 0; }
+#frm-question .question01 li:nth-of-type(2n) { margin-right: 0; }
+#frm-question .question01 li.cur .cake { position: relative; }
+#frm-question .question01 li.cur .cake:after { content: ''; position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background: url(../img/questionnaire/cake_cur.png); background-size: contain; }
+#frm-question .question01 li .cake-name { font-size: 14px; line-height: 30px; text-align: center; color: #000; }
+#frm-question .question01 li.cur .cake-name { color: #f24f66; }
+#frm-question .question02 a { width: 32%; margin-bottom: 10px; }
+#frm-question .question02 a:nth-of-type(2n) { float: right; }
+#frm-question .question02 a.other { float: none; display: block; clear: both; }
+#frm-question .question02 textarea { display: none; height: 80px; }
+#frm-question .question02 .length { display: none; text-align: right; line-height: 14px; color: #b2b2b2; }
+#frm-question .question03 { margin-bottom: 20px; }
+#frm-question .question03 .length { text-align: right; line-height: 14px; color: #b2b2b2; }
+
+.content .footer { position: relative; }
+.content .footer a { position: absolute; top: 37%; left: 34%; display: block; width: 32%; height: 30%; }
+
+#mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
+#mask-result img { width: 100%; }
+#mask-result .result { position: absolute; top: 50%; left: 8%; width: 84%; z-index: 9999; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .result-content { position: relative; }
+#mask-result .result .btn-close { position: absolute; top: -7%; right: -3.6%; display: block; width: 7.4%; }

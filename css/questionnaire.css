@@ -1,0 +1,40 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { position: relative; background-color: #faf1e3; }
+
+.content #frm-question { position: absolute; top: 8.2%; left: 8%; display: block; width: 84%; padding: 30px 0 50px; background-color:#fff; border-radius: 8px; }
+
+#frm-question .frm-title { font-size: 16px; line-height: 20px; color: #6b4437; text-align: center; }
+#frm-question .frm-tip { font-size: 14px; line-height: 30px; color: #e44e62; text-align: center; }
+#frm-question .img-title { width: 87.4%; padding: 14px 0 24px; margin: 0 auto; }
+#frm-question .img-coupon { width: 74%; margin: 0 auto; }
+#frm-question .frm-tip2 { margin: 4% 0 3%; }
+
+#frm-question .frm-info { width: 85%; margin: 0 auto; }
+#frm-question .frm-info li { height: 40px; border: 1px #000 solid; border-radius: 4px; margin-bottom: 10px; }
+#frm-question .frm-info li>i { float: left; display: inline-block; width: 5.2%; padding: 0 2.8% 0 2%; line-height: 40px; }
+#frm-question .frm-info li>i img { vertical-align: middle; }
+#frm-question .frm-info li>input { float: left; display: inline-block; width: 88%;background-color: transparent; border: none; font-size: 16px; line-height: 40px; outline: none; }
+#frm-question .frm-info li .txt-vcode { width: 54%; }
+#frm-question .frm-info li #btn-vcode { float: right; display: inline-block; width: 34%; height: 40px; background-color: #e44e62; border-radius: 0 4px 4px 0; font-size: 12px; line-height: 40px; color: #fff; text-align: center; }
+#frm-question .frm-info #btn-join { display: block; height: 40px; background-color: #e44e62; border: 1px #000 solid; border-radius: 4px; font-size: 16px; line-height: 40px; color: #fff; text-align: center; }
+
+#mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
+#mask-result img { width: 100%; }
+#mask-result .result { position: absolute; top: 50%; left: 8%; width: 84%; background: #fff; border-radius: 8px; z-index: 9999; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .result-content { position: relative; }
+#mask-result .result .btn-close { position: absolute; top: -7%; right: -3.6%; display: block; width: 7.4%; }
+#mask-result .result .result-content .result-info { width: 88%; padding: 50px 0; margin: 0 auto; font-size: 14px; line-height: 24px; text-align: center; }
+
+
+::-webkit-input-placeholder{
+   color: #ccc;
+}
+::-ms-input-placeholder{
+   color: #ccc;
+}
+::-moz-placeholder{
+   color: #ccc;
+}
+::-moz-placeholder{
+   color: #ccc;
+}

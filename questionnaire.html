@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<title>品鉴会问券调查活动</title>
+		<link rel="stylesheet" type="text/css" href="css/common_b.css"/>
+		<link rel="stylesheet" type="text/css" href="css/questionnaire.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="img/logo_b.png" />
+			<a href="http://wap.incake.net"><img src="img/return_b.png"/><span>返回首页</span></a>
+		</header>
+		
+		<div class="content">
+			<img src="img/questionnaire/bg.jpg"/>
+			<div id="frm-question">
+                <p class="frm-title">INCAKE蛋糕口味小调查</p>
+                <p class="frm-tip">做问卷赢半价券</p>
+                <p class="img-title"><img src="img/questionnaire/i_title.png"/></p>
+                <p class="img-coupon"><img src="img/questionnaire/coupon.jpg"/></p>
+                <p class="frm-tip frm-tip2">快来参与问卷调查吧！</p>
+                <div class="frm-info">
+                    <ul>
+                        <li class="clearfix">
+                            <i class="icon-mobile"><img src="img/questionnaire/i_phone.png"/></i>
+                            <input type="number" class="txt-mobile" placeholder="请输入手机号">
+                        </li>
+                        <li class="clearfix">
+                            <i class="icon-vcode"><img src="img/questionnaire/i_code.png"/></i>
+                            <input type="number" class="txt-vcode" placeholder="请输入验证码">
+                            <a href="javascript:;" id="btn-vcode">获取验证码</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" id="btn-join">参与问卷调查</a>
+                </div>
+            </div>
+			
+	        <div id="mask-result">
+	            <div class="result">
+	                <div class="result-content">
+	                	<a href="javascript:;" class="btn-close">
+	                		<img src="img/questionnaire/btn_close.png"/>
+	                	</a>
+	                    <p class="result-info">抱歉！您还没有订购INCAKE的4种口味升级款蛋糕，不能参加此次问卷。完成购买之后再来参加吧~</p>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+
+		<footer>
+			<img src="img/QrCode_b.jpg" />
+			<p>微信号：InCake_2012</p>
+			<p class="phone">400-921-5757</p>
+		</footer>
+		
+		<!-- javascript begin -->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <script src="js/questionnaire.js"></script>
+	    <!-- javascript end -->
+		
+	</body>
+</html>
