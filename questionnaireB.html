@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<title>品鉴会问券调查活动</title>
+		<link rel="stylesheet" type="text/css" href="css/common_b.css"/>
+		<link rel="stylesheet" type="text/css" href="css/questionnaireB.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="img/logo_b.png" />
+			<a href="http://wap.incake.net"><img src="img/return_b.png"/><span>返回首页</span></a>
+		</header>
+		
+		<div class="content">
+			<img src="img/questionnaire/banner.jpg"/>
+			<div id="frm-question">
+                <div class="question sex">
+	                <p class="frm-title">您的性别:</p>
+					<div class="answer clearfix">
+						<a href="javascript:;">男</a>
+						<a href="javascript:;">女</a>
+					</div>                	
+                </div>
+                <div class="question question01">
+	                <p class="frm-title">1.您订购的蛋糕是:</p>
+					<div class="answer">
+						<ul class="clearfix">
+	                        <li >
+	                            <p class="cake"><img src="img/questionnaire/cake01.jpg"/></p>
+	                            <p class="cake-name">A:女王芝士升级款</p>
+	                        </li>
+	                        <li>
+	                            <p class="cake"><img src="img/questionnaire/cake02.jpg"/></p>
+	                            <p class="cake-name">B:玛格丽特升级款</p>
+	                        </li>
+	                        <li>
+	                            <p class="cake"><img src="img/questionnaire/cake03.jpg"/></p>
+	                            <p class="cake-name">C:提米拉苏升级款</p>
+	                        </li>
+	                        <li>
+	                            <p class="cake"><img src="img/questionnaire/cake04.jpg"/></p>
+	                            <p class="cake-name">D:浓情巧克力升级款</p>
+	                        </li>
+	                    </ul>
+					</div>                	
+                </div>
+                <div class="question question02">
+	                <p class="frm-title">2.如果只保留一个产品？您希望保留的是？(单选) </p>
+					<div class="answer clearfix">
+						<a href="javascript:;">A：新产品</a>
+						<a href="javascript:;">B：老产品</a>
+						<a href="javascript:;" class="other">C：其他</a>
+                        <textarea id="txtReason" resize="no" placeholder="请在此输入理由"></textarea>
+                        <p class="length">0/200</p>
+					</div>                	
+                </div>
+                <div class="question question03">
+	                <p class="frm-title">3.对于新款蛋糕的口味，请留下您宝贵的建议或意见，如建议被采纳，我们还会额外赠送您一张价值189元的蛋糕卡哦！请将建议填写至下方空格中。</p>
+					<div class="answer">
+						<div class="text">
+                            <textarea id="txtSuggest" resize="no" placeholder="请输入您的建议"></textarea>
+                            <p class="length">0/200</p>
+                        </div>
+					</div>                	
+                </div>
+            </div>
+			<div class="footer">
+				<img src="img/questionnaire/btn_bg.png"/>
+				<a href="javacsript:;" id="btn-submit"></a>
+			</div>
+			
+	        <div id="mask-result">
+	            <div class="result">
+	                <div class="result-content">
+	                	<a href="javascript:;" class="btn-close">
+	                		<img src="img/questionnaire/btn_close.png"/>
+	                	</a>
+	                    <p class="result-info"><img src="img/questionnaire/result_ok.png"/></p>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+
+		<footer>
+			<img src="img/QrCode_b.jpg" />
+			<p>微信号：InCake_2012</p>
+			<p class="phone">400-921-5757</p>
+		</footer>
+		
+		<!-- javascript begin -->
+	    <script src="js/jquery-2.1.4.min.js"></script>
+	    <script src="js/questionnaireB.js"></script>
+	    <!-- javascript end -->
+		
+	</body>
+</html>

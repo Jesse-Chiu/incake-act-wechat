@@ -6,7 +6,7 @@ body { max-width: 640px; margin: 0 auto; }
 .content .swiper-container { position: absolute; top: 9.7%; left: 12%; width: 75.6%; height: 81.6%; overflow: hidden; }
 .content .swiper-slide .page01 { width: 60%; margin: 20% 0 0 27%; }
 .content .swiper-slide .page02 { position: relative; width: 100%; }
-.content .swiper-slide .page02 a { position: absolute; top: 23%; left: 61%; width: 30%; height: 5%; transform:rotate(-8deg); -webkit-transform:rotate(-8deg); background-color: red; opacity: .5; }
+.content .swiper-slide .page02 a { position: absolute; top: 23%; left: 61%; width: 30%; height: 5%; transform:rotate(-8deg); -webkit-transform:rotate(-8deg); }
 .content .swiper-slide .page02 .btn-coupon { top: 76%; left: 7%; }
 
 
