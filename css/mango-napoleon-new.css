@@ -1,0 +1,9 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #fff; }
+.content .info { position: relative; }
+.content .info a{ position: absolute; bottom: 0; left: 42%; display: block; width: 42%; height: 14%; }
+.content .desc { display: block; width: 82%; margin: 8% auto; }
+
+.content .rules { width: 88%;padding: 26px 6%; background-color: #9a763c; color: #fff; }
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; }
+.content .rules dd{ line-height: 20px; }
