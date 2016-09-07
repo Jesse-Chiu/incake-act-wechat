@@ -1,0 +1,29 @@
+body{ max-width: 640px; margin: 0 auto; }
+.content { background-color: #f0f0f0; }
+
+.content .disc { text-align: center; color: #382624; }
+.content .disc .discTitle { font-size: 32px; line-height: 40px; font-weight: bold; }
+.content .disc .discTitle2 { margin-bottom: 20px; font-size: 16px; line-height: 16px; }
+.content .disc .discTxt { font-size: 12px; line-height: 20px; }
+.content .disc .tip2 { font-size: 26px; line-height: 36px; margin-top: 20px; }
+.content .disc .info { font-size: 22px; line-height: 34px; color: #965b49;}
+.content .disc .info span { font-weight: bold; }
+
+.content .write-method { width: 94%; margin: 16px auto; padding: 10px 0; background-color: #fff; }
+.content .write-method p { width: 84%; margin: 0 auto; font-size: 14px; line-height: 24px; color: #382624; }
+.content .write-method .title { font-weight: bold; }
+.content .write-method .text { text-align: justify; }
+.content .write-method .tip { text-align: center; }
+
+.content .btn-begin { display: block; width: 55%; background-color: #c50202; border-radius: 25px; margin: 0 auto; font-size: 16px; line-height: 50px; font-weight: bold; text-align: center; color: #fff; }
+.content .qrCode { display: block; width: 28%; margin: 20px auto; }
+
+.content .cake-list { position: relative; width: 85%; margin: 0 auto 30px; }
+.content .cake-list a { position: absolute; bottom: 1%; left: 3%; display: block; width: 40%; height: 7%; }
+.content .cake-list a.btn-buy02 { left: 54%; }
+.content .cake-list a.btn-buy03 { left: 5%; }
+.content .cake-list a.btn-buy04 { left: 55%; }
+
+.content dl { width: 88%; padding: 6%; background-color: #60433f; color: #fff; }
+.content dt { margin-bottom: 12px; font-size: 16px; line-height: 16px; text-align: justify; }
+.content dd { font-size: 12px; line-height: 18px; text-align: justify; }
