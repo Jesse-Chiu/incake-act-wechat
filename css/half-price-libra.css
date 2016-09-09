@@ -1,0 +1,21 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #f8c5c4; }
+
+.content .cakes { position: relative; }
+.content .cakes .btn-buy { display: block; position: absolute; bottom: 0; left: 16%; width: 37.5%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+.content .libra-female .btn-buy { left: 38%; }
+
+.content .rules { width: 80%; padding: 26px 10%; background-color: #fff; margin-top: 40px; text-align: center; color: #874832; }
+.content .rules dt{ font-size: 16px; line-height: 30px; }
+.content .rules dd{ line-height: 22px; }
+
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
