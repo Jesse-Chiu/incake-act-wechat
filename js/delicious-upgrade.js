@@ -3,7 +3,7 @@
 	$(function(){
 
 		fnInit();		
-
+		fnAddr();
 	});
 
 	function fnInit(){
@@ -27,6 +27,19 @@
 		}
 		
 		
+	}
+	
+	function fnAddr(){
+		var $oContent = $('.content'),
+			$oAddr = $oContent.find('.address'),
+			$oAddrCur = $oAddr.find('.addr-cur').children('span'),
+			$aLi = $oAddr.find('li');
+			
+			$aLi.on('click',function(){
+				$aLi.removeClass('cur');
+				$(this).addClass('cur');
+				$oAddrCur.text($(this).text());
+			});
 	}
 
 })();
