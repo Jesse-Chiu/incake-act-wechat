@@ -1,0 +1,8 @@
+.content { background-color: #f4f3ed; }
+
+.content .cakes { position: relative; }
+.content .cakes a { position: absolute; bottom: 0; left: 32%; display: block; width: 36%; height: 7%; }
+.content .text { margin: 40px 0; }
+
+.content dl { width: 80%; padding: 6% 10%; background-color: #381e1c; line-height: 20px; text-align: center; color: #fff; }
+.content dt { margin-bottom: 14px; font-size: 16px; }
