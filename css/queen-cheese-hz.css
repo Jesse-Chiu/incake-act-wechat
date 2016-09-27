@@ -1,0 +1,39 @@
+.content .banners { position: relative; }
+.content .banners a { position: absolute; top: 44%; left: 64%; width: 17.4%; -webkit-animation: arrow 1.5s ease infinite; animation: arrow 1.5s ease infinite; }
+.content .banners .number { position: absolute; top: 52%; left: 84%; width: 12%; }
+.content .banners .count { position: absolute; top: 54.5%; right: 8%; font-size: 20px; }
+
+.content .rules { width: 88%;padding: 26px 6%; background-color: #619cc6; text-align: center; color: #fff; }
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; }
+.content .rules dd{ line-height: 20px; }
+
+.result-login .register-title { width: 80%; margin: 20% auto 8%; }
+.result-login .frm { width: 80%; margin: 0 auto; }
+.result-login li { margin-bottom: 10px; position: relative; }
+.result-login li input { display: block; height: 40px; line-height: 40px; text-indent: 2.6em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; }
+.result-login li .txt-mobile { float: left; width: 60%; border-radius: 5px 0 0 5px; }
+.result-login li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #ddd; border-radius: 0 5px 5px 0; color: #fff; background-color: #8bade5; }
+.result-login li a { font-size: 12px; }
+.result-login li .txt-vcode { width: 100%; }
+.result-login li .icon-mobile { position: absolute; width: 10%; height: 100%; margin-left: 3%; background: url('../img/queen-cheese-hz/icon_mobile.png') no-repeat; background-size: contain; background-position: left center;  }
+.result-login li .icon-vcode { position: absolute; width: 9%; height: 100%; margin-left: 3%; background: url('../img/queen-cheese-hz/icon_vcode.png') no-repeat; background-size: contain; background-position: left center;  }
+.result-login #btn-register { display: block; width: 80%; height: 42px; margin: 0 auto; line-height: 42px; text-align: center; border-radius: 5px; background-color: #0e2f8f; color: #fff; margin-bottom: 40px; }
+
+/* 注册结果 */
+#mask-result { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#mask-result img { width: 100%; }
+#mask-result .result { width: 73.4%; max-width: 500px; background: #fff; margin: auto; position: absolute; top: 50%; left: 0; right: 0; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .btn-result-close { display: block; position: absolute; top: 5%; right: 5%; width: 10.6%; }
+#mask-result .result .result-content { width: 100%; }
+#mask-result .result .result-content .result-info { display: none; width: 100%; }
+
+@-webkit-keyframes arrow { 
+	0% { top: 46%; }
+	50% { top: 48%; } 
+	100% { top: 46%; } 
+}
+@keyframes arrow { 
+	0% { top: 46%; }
+	50% { top: 48%; } 
+	100% { top: 46%; }
+}
