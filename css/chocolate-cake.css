@@ -1,0 +1,20 @@
+.content { background-color: #35201c; }
+
+.content .banner { position: relative; }
+.content .banner a { position: absolute; top: 45%; left: 12.5%; display: block; width: 33.4%; }
+
+.content dl { width: 80%; padding: 6% 10%; background-color: #f09ea8; line-height: 20px; text-align: center; color: #fff; }
+.content dt { margin-bottom: 14px; font-size: 16px; }
+
+::-webkit-input-placeholder{
+   color: #ccc;
+}
+::-ms-input-placeholder{
+   color: #ccc;
+}
+::-moz-placeholder{
+   color: #ccc;
+}
+::-moz-placeholder{
+   color: #ccc;
+}
