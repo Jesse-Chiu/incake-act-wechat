@@ -3,6 +3,8 @@
 		
 		fnVoucher();
 		
+		fnShare();
+		
 	});
 	
 	// 兑换券点击事件
@@ -64,6 +66,35 @@
                 $oMaskResult.hide();
             });
         });
+    }
+    
+    function fnShare() {
+        var $oMask = $('#mask-share'),
+            tl = new TimelineLite();
+			
+		var href = location.href,
+            status = href.indexOf('status=true');
+        // 这里判断是否显示弹窗
+        if(status>0){
+            
+            tl.clear();
+            tl.to($oMask, 0.6, {
+                top: '0',
+                ease: Bounce.easeOut
+            });
+
+        }
+
+        // 点击遮罩层事件
+        $oMask.on('click', function() {
+
+            tl.clear();
+            tl.to($oMask, 0.6, {
+                top: '-100%',
+                ease: Power2.easeOut
+            });
+        });
+        
     }
 	
 })();
