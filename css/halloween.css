@@ -1,0 +1,8 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #252226; }
+.content .banner { position: relative; }
+.content .banner a{ position: absolute; top: 57.4%; left: 50%; display: block; width: 34%; height: 6%; transform: rotate(6deg); -webkit-transform:rotate(6deg); }
+
+.content .rules { width: 90%;padding: 26px 5%; background-color: #bb7313; text-align: center; color: #fff; }
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; }
+.content .rules dd{ line-height: 20px; }
