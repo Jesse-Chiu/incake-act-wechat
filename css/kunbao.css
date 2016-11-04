@@ -1,0 +1,58 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #000; }
+.content .banner { position: relative; }
+.content .banner a { position: absolute; display: block; }
+.content .banner a.cake-list { top: 32%; right: 10%; width: 23%; animation: swing 3s infinite; -webkit-animation: swing 3s infinite; transform-origin: bottom center; -webkit-transform-origin: bottom center; }
+.content .banner a.btn-buy { bottom: 4%; left: 14%; width: 25.6%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+
+.content .rules { width: 88%;padding: 26px 6%; background-color: #dcc085; text-align: justify; color: #2a2a2f; }
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; }
+.content .rules dd{ line-height: 20px; }
+
+
+.result-login .register-title { width: 60%; height: 20px; margin: 10% auto 8%; font-size: 18px; line-height: 20px; text-align: center; }
+.result-login .frm { width: 80%; margin: 0 auto; }
+.result-login li { margin-bottom: 10px; position: relative; }
+.result-login li input { display: block; height: 40px; line-height: 40px; text-indent: 2.6em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; }
+.result-login li .txt-vcode { float: left; width: 60%; border-radius: 5px 0 0 5px; }
+.result-login li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #ddd; border-radius: 0 5px 5px 0; color: #fff; background-color: #8bade5; }
+.result-login li a { font-size: 12px; }
+.result-login li .txt-mobile { width: 100%; }
+.result-login li .icon-mobile { position: absolute; width: 9%; height: 100%; margin-left: 3%; background: url('../img/kunbao/icon_mobile.png') no-repeat; background-size: contain; background-position: left center;  }
+.result-login li .icon-vcode { position: absolute; width: 10%; height: 100%; margin-left: 3%; background: url('../img/kunbao/icon_vcode.png') no-repeat; background-size: contain; background-position: left center;  }
+.result-login .tips { width: 80%; margin: -4px auto 0; font-size: 12px; line-height: 12px; color: #d13c4f; }
+.result-login #btn-register { display: block; width: 80%; height: 42px; margin: 14px auto 28px; font-size: 16px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #0e2f8f; color: #fff; }
+
+/* 注册结果 */
+#mask-result { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 999; }
+#mask-result img { width: 100%; }
+#mask-result .result { width: 73.4%; max-width: 500px; background: #fff; margin: auto; border-radius: 6px; position: absolute; top: 50%; left: 0; right: 0; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .btn-result-close { display: block; position: absolute; top: 5%; right: 5%; width: 9%; z-index: 999; }
+#mask-result .result .result-content { width: 100%; }
+#mask-result .result .result-content .result-info { display: none; width: 100%; }
+#mask-result .result .result-content .result-ok,
+#mask-result .result .result-content .result-fail { position: relative; }
+#mask-result .result .result-content .result-ok a,
+#mask-result .result .result-content .result-fail a { position: absolute; bottom: 9%; left: 32%; display: block; width: 36%; background-color: #0e2f8f; border-radius: 6px; font-size: 16px; line-height: 40px; text-align: center; color: #fff;  }
+
+@-webkit-keyframes swing {
+	0% { -webkit-transform: rotate(-25deg); }
+	50% { -webkit-transform: rotate(20deg); }
+	100% { -webkit-transform: rotate(-25deg); }
+}
+@keyframes swing {
+	0% { transform: rotate(-25deg); }
+	50% { transform: rotate(20deg); }
+	100% { transform: rotate(-25deg); }
+}
+
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
