@@ -1,29 +1,17 @@
 (function() {
 
     $(function() {
-		
-		var $oContent = $('.content'),
-			$oRotaryBg = $('.content').find('.rotary-bg');
-    	
-    	// 转盘LED
-    	setInterval(function(){
-    		var _src = $oRotaryBg.attr('src'),
-				state = _src.indexOf('turntable_bg.png');
-			
-	    	if(state > 0){
-	    		_src = _src.replace("_bg","_bg2");
-	    	}else{
-	    		_src = _src.replace("_bg2","_bg");
-	    	}
-		  	$oRotaryBg.attr('src',_src);
-    	},500);
+		fnInit();
+    });
+    
+    function fnInit() {
+		var $oContent = $('.content');
     	
     	// 城市选择
 		fnSendCity($oContent);
 		// 验证抽奖机会
 		fnTestDraw($oContent);
-
-    });
+    }
     
     // 城市选择
     function fnSendCity(_content){
@@ -37,11 +25,10 @@
         	$oArrow.find('img').toggleClass('hide');
             
             if($oPopup.hasClass('active')){
-           		$oPopup.fadeOut(500);
+           		$oPopup.hide(500);
             }else{
-           		$oPopup.fadeIn(500);
+           		$oPopup.show(500);
             }
-            
             $oPopup.toggleClass('active');
         });
 		
@@ -49,10 +36,9 @@
 			$aLi.removeClass('active');
 			$(this).addClass('active');
 			$('.addr-cur').text($(this).text());
-			$oPopup.fadeOut(500);
+			$oPopup.hide(500);
        		$oPopup.removeClass('active');
 		});
-        
     }
     
     // 验证抽奖机会
@@ -63,13 +49,12 @@
     	
     	$oBtnStart.on('click',function(){
     		if($oDrawNum.text()>0){
-//  			if($oDrawNum.text()==1){
-//  				
-//  			}
 				//减少抽奖次数
-				removeDrawNum();
-				// 开始抽奖
-    			Lottery($oRotary);
+				if(removeDrawNum($oDrawNum)){
+					// 开始抽奖
+    				Lottery($oRotary);
+				}
+				
     		}else{
     			alert("没有机会喽~");
     		}
@@ -78,16 +63,16 @@
     }
     
     // 减少抽奖机会-----------------------
-	function removeLottery(){
-		var $num = $('#lotteryNum').text();
-		if($num>0){
-			$num-=1;
-			$('#lotteryNum').html($num);
+	function removeLottery(drawNum){
+		var $num = drawNum.text();
+		if($num>1){
+			
+			
+			
 			return true;
 		}else{
 			return false;
 		}
-		
 	}
     
     // 开始抽奖

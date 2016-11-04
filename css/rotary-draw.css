@@ -20,7 +20,8 @@ body { max-width: 640px; margin: 0 auto; }
 .content .location-popup > ul li.active { background-color: #fff; color: #000; }
 .content .location-popup > ul li:nth-of-type(4n) { margin-right: 0; }
 
-.content .rotary { position: relative; margin-top: 14px; }
+.content .rotary { position: relative; margin-top: 14px; animation: change 1s linear infinite; -webkit-animation: change 1s linear infinite; }
+.content .rotary .rotary-bg {  }
 .content .rotary .gift-item { position: absolute; top: 0; left: 0; }
 .content .rotary .btn-start { position: absolute; top: 36%; left: 36%; width: 28%; }
 .content .rotary .gift-arrow { position: absolute; top: 0; left: 46.5%; width: 6.4%; }
@@ -38,3 +39,13 @@ body { max-width: 640px; margin: 0 auto; }
 .content .rules .rule-title { line-height: 30px; font-size: 16px; }
 .content .rules .rule-title { margin-top: 16px; }
 .content .rules dd{ line-height: 20px; text-align: justify; }
+
+@keyframes change {
+	from { background: url(../img/rotary-draw/turntable_bg1.png) no-repeat; background-size: cover; }
+	to { background: url(../img/rotary-draw/turntable_bg2.png) no-repeat; background-size: cover; }
+}
+@-webkit-keyframes change {
+	from { background: url(../img/rotary-draw/turntable_bg1.png) no-repeat; background-size: cover; }
+	to { background: url(../img/rotary-draw/turntable_bg2.png) no-repeat; background-size: cover; }
+}
+
