@@ -9,8 +9,8 @@
     	
     	// 城市选择
 		fnSendCity($oContent);
-		// 验证抽奖机会
-		fnTestDraw($oContent);
+		// 转盘抽奖
+		fnDraw($oContent);
     }
     
     // 城市选择
@@ -41,38 +41,46 @@
 		});
     }
     
+    // 转盘抽奖
+    function fnDraw(_content){
+		var $oBtnStart = _content.find('.btn-start');
+            
+		 $oBtnStart.on('click',function(){
+		 	// 验证抽奖机会
+		 	fnTestDrawNum(_content);
+		 });
+		 
+    }
+    
     // 验证抽奖机会
-    function fnTestDraw(_content){
+    function fnTestDrawNum(_content){
     	var $oRotary = _content.find('.rotary'),
-            $oBtnStart = $oRotary.find('.btn-start'),
             $oDrawNum = _content.find('#number');
     	
-    	$oBtnStart.on('click',function(){
-    		if($oDrawNum.text()>0){
-				//减少抽奖次数
-				if(removeDrawNum($oDrawNum)){
-					// 开始抽奖
-    				Lottery($oRotary);
-				}
-				
-    		}else{
-    			alert("没有机会喽~");
-    		}
-    	});
+		if($oDrawNum.text()>0){
+			//改变抽奖次数
+			if(removeDrawNum($oDrawNum)){
+				// 开始抽奖
+				Lottery($oRotary);
+			}
+			
+		}else{
+			//-----------------------完善相关功能代码
+			alert("没有机会喽~");
+		}
     	
     }
     
-    // 减少抽奖机会-----------------------
-	function removeLottery(drawNum){
+    // 改变抽奖次数-----------------------完善相关功能代码
+	function removeDrawNum(drawNum){
 		var $num = drawNum.text();
-		if($num>1){
+		//仅有一次机会
+		if($num==1){
 			
+		}else{ //多于一次机会
 			
-			
-			return true;
-		}else{
-			return false;
 		}
+		return true;
 	}
     
     // 开始抽奖
@@ -88,8 +96,10 @@
 				animateTo: 2160, //设置请求超时后返回的角度，360*6
 				callback:function(){
 					alert('网络超时');
-					//还原之前状态
-					$oDrawNum.html(parseInt($oDrawNum.text())+1); 
+					//还原抽奖次数 & 重启定时器
+					$oDrawNum.html(parseInt($oDrawNum.text())+1);
+					//-------补充：重启定时器相关代码
+					
 				}
 			}); 
 		}; 
@@ -101,7 +111,7 @@
 				duration: 5000, 
 				animateTo: angle+1440, //angle是图片上各奖项对应的角度，1440是让指针旋转4圈。所以最后的结束的角度就是这样子
 				callback:function(){
-					showPrize(awards);//展示对应奖项
+					showPrize(rotary,awards);//返回对应奖项信息
 				}
 			}); 
 		};
@@ -162,19 +172,37 @@
 		});
     }
     
-    // 奖品展示-----------------------------
-	function showPrize(awards){
-		var $prizeBg = $('.prize-bg');
-		var prize = '.prize'+awards;
-		var $prize = $(prize);
+    // 获取对应奖品信息
+	function showPrize(_rotary,awards){
+		var $oArrow = _rotary.find('gift-arrow'),
+			prize = '.prize'+awards,
+			$oPrize = _rotary.find(prize);
 		
-		//隐藏抽奖模块
-		showRotaryTable(0);
-		//展示奖品
-		$prizeBg.removeClass('hide');
-		$prize.removeClass('hide');
+		//隐藏奖盘指针 & 奖盘展示奖品
+		$oArrow.hide();
+		$oPrize.fadeIn(500);
+		//显示继续抽奖按钮-----------完善相关功能代码
+		
+		//显示弹窗提示
+		lotteryTip();
 		//继续抽奖
-		lotteryGoOn($prizeBg,$prize);
+		lotteryGoOn($oArrow,$oPrize);
+	}
+	
+	// 继续抽奖----------------完善相关功能代码
+	function lotteryGoOn(_arrow,prize){
+//		var $oBtnGoOn = $('#btn_goOn');
+//		
+//		$oBtnGoOn.on('click',function(){
+//			//释放指针 & 隐藏上一次中奖信息
+//			_arrow.show();
+//			prize.hide();
+//		});
+	}
+	
+	// 弹窗提示----------------完善相关功能代码
+	function lotteryTip(){
+		
 	}
 
 })();
