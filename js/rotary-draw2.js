@@ -1,14 +1,12 @@
 (function() {
 
     $(function() {
+    	
     	// 城市选择
 		fnSendCity();
 		// 初始化抽奖
 		fnInitLottery();
     });
-    
-    
-    var totalRotation = 0; // 记录转动的圈数
     
     // 城市选择
     function fnSendCity(){
@@ -38,7 +36,6 @@
 		});
     }
     
-    // 初始化抽奖
     function fnInitLottery() {
 		var $oContent = $('.content'),
 			$oChance = $oContent.find('.chance'),
@@ -48,7 +45,7 @@
 		// expireTime: 过期时间
 		// validNum: 有效抽奖次数
 		var _data = {
-			expireTime: new Date(2016, 10, 9, 18, 59, 0), // 失效时间
+			expireTime: new Date(2016, 10, 9, 0, 35, 0), // 失效时间
 			validNum: 3 // 有效抽奖次数
 		};
 
@@ -246,21 +243,27 @@
     // 开始抽奖
     function fnLottery(_rotary){
 		var $oGiftItem = _rotary.find('.gift-item'),
-            $oDrawNum = $('#number'),
-            tl = new TimelineLite();
+            $oDrawNum = $('#number')
+//          tl = new TimelineLite();
             
 		var rotateFunc = function(_awards,_angle){  //_awards:奖项，_angle:奖项对应的角度
-			
-			totalRotation = (totalRotation - (totalRotation % 360)) + _angle + 360 * 10;
-			
-			tl.clear();
-			tl.to($oGiftItem, 8, {
-				rotation: totalRotation,
-				ease: Circ.easeInOut,
-				onComplete: function() {
+			$oGiftItem.stopRotate();
+			$oGiftItem.rotate({
+				angle:0, 
+				duration: 5000, 
+				animateTo: _angle+1440, //angle是图片上各奖项对应的角度，1440是让指针旋转4圈。所以最后的结束的角度就是这样子
+				callback:function(){
 					showPrize(_rotary,_awards);//返回对应奖项信息
 				}
-			});
+			}); 
+//			tl.clear();
+//			tl.to($oGiftItem, 8, {
+//				rotation: _angle+3600,
+//				ease: Circ.easeInOut,
+//				onComplete: function() {
+//					showPrize(_rotary,_awards);//返回对应奖项信息
+//				}
+//			});
 		};
 		
 		// 判断对应奖品控制转盘角度
@@ -331,13 +334,11 @@
 			$oBtnGoOn = $('.btn-goOn');
 		
 		$oBtnGoOn.on('click',function(){
-			if(!$oBtnGoOn.hasClass("btn-timeout")){
-				//释放转盘&指针 & 隐藏上一次中奖信息
-				$oGiftItem.show();
-				_arrow.show();
-				prize.hide();
-				$(this).hide();
-			}
+			//释放转盘&指针 & 隐藏上一次中奖信息
+			$oGiftItem.show();
+			_arrow.show();
+			prize.hide();
+			$(this).hide();
 		});
 	}
 	

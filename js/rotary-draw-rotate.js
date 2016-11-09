@@ -1,14 +1,12 @@
 (function() {
 
     $(function() {
+    	
     	// 城市选择
 		fnSendCity();
 		// 初始化抽奖
 		fnInitLottery();
     });
-    
-    
-    var totalRotation = 0; // 记录转动的圈数
     
     // 城市选择
     function fnSendCity(){
@@ -38,17 +36,19 @@
 		});
     }
     
-    // 初始化抽奖
+    
     function fnInitLottery() {
 		var $oContent = $('.content'),
 			$oChance = $oContent.find('.chance'),
 			validNum = 0,
 			isExpired = false; // 是否过期;
 		
+		// cityCode: 城市代码，厦门地区当日晚上9点清空抽奖此时
 		// expireTime: 过期时间
 		// validNum: 有效抽奖次数
 		var _data = {
-			expireTime: new Date(2016, 10, 9, 18, 59, 0), // 失效时间
+			cityCode: '0592', // 城市代码
+			expireTime: new Date(2016, 10, 8, 23, 09, 0), // 失效时间
 			validNum: 3 // 有效抽奖次数
 		};
 
@@ -150,9 +150,10 @@
 		fnSelectPrize($oContent);
 		
 		// 加载失效提示窗
-		var $oTimeOut = $(".result-timeout");
+		var $oBtnTimeOut = $oChance.find("#btn-timeout"),
+			$oTimeOut = $(".result-timeout");
 		
- 		$oChance.on("click","#btn-timeout",function(){
+ 		$oBtnTimeOut.on("click",function(){
  			fnPopupMask($oTimeOut,0);
  		});
 		
@@ -183,7 +184,7 @@
 		var $oBtnStart = _content.find('.btn-start'),
 			$oResultLogin = $('.result-login');
             
-		$oBtnStart.on('click',function(){
+		 $oBtnStart.on('click',function(){
 		 	// 验证登录状态
 		 	if(fnTestLogin()){
 		 		// 验证抽奖机会
@@ -192,7 +193,7 @@
 		 		// 显示登录弹窗
 		 		fnPopupMask($oResultLogin,0);
 		 	}
-		});
+		 });
 		 
     }
 
@@ -213,18 +214,16 @@
     	// 倒计时验证
     	if(!_isExpired){
     		// 判断抽奖次数    
-    		if($oDrawNum.text() == 0 && $oDrawNum.text()!=""){
+    		if($oDrawNum.text() > 0){
+				//改变抽奖次数
+				if(fnRemoveDrawNum($oDrawNum)){
+					// 开始抽奖
+					fnLottery($oRotary);
+				}
+			}else{
 				// 弹出次数不足提示窗
 				var $oFrequency = $('.result-frequency');
 		 		fnPopupMask($oFrequency,0);
-			}else{
-				if($oDrawNum.text() > 0){
-					//改变抽奖次数
-					if(fnRemoveDrawNum($oDrawNum)){
-						// 开始抽奖
-						fnLottery($oRotary);
-					}
-				}
 			}
     	}	
     	
@@ -246,61 +245,84 @@
     // 开始抽奖
     function fnLottery(_rotary){
 		var $oGiftItem = _rotary.find('.gift-item'),
-            $oDrawNum = $('#number'),
-            tl = new TimelineLite();
+            $oDrawNum = $('#number');
             
+		//超时函数
+		var timeOut = function(){  
+			$oGiftItem.rotate({
+				angle:0, 
+				duration: 10000, 
+				animateTo: 2160, //设置请求超时后返回的角度，360*6
+				callback:function(){
+					alert('网络超时');
+					//还原抽奖次数 & 重启定时器
+					$oDrawNum.html(parseInt($oDrawNum.text())+1);
+					//-------重启定时器相关代码待完善
+					
+				}
+			}); 
+		}; 
+		
 		var rotateFunc = function(_awards,_angle){  //_awards:奖项，_angle:奖项对应的角度
-			
-			totalRotation = (totalRotation - (totalRotation % 360)) + _angle + 360 * 10;
-			
-			tl.clear();
-			tl.to($oGiftItem, 8, {
-				rotation: totalRotation,
-				ease: Circ.easeInOut,
-				onComplete: function() {
+			$oGiftItem.stopRotate();
+			$oGiftItem.rotate({
+				angle:0, 
+				duration: 5000, 
+				animateTo: _angle+1440, //angle是图片上各奖项对应的角度，1440是让指针旋转4圈。所以最后的结束的角度就是这样子
+				callback:function(){
 					showPrize(_rotary,_awards);//返回对应奖项信息
 				}
-			});
+			}); 
 		};
 		
-		// 判断对应奖品控制转盘角度
-		// 此处设定奖品项为数组data中的每项
-		var data = [1,2,3,4,5,6,7,8,9], //奖品项数组
-			angle = 0; //转动角度
-		//暂设为系统随机生成概率-------------------上线前需完善相关代码
-		data = data[Math.floor(Math.random()*data.length)]; 
+		// 判断超时事件，并赋给time相应状态值	【0：超时；1：正常】
+		var time = [0,1];
+		// 此处time值临时设定为系统随机生成
+		time = time[Math.floor(Math.random()*time.length)];
 		
-		switch (data){
-			case 1:
-				angle = 360;
-				break;
-			case 2:
-				angle = 40;
-				break;
-			case 3:
-				angle = 80;
-				break;
-			case 4:
-				angle = 120;
-				break;
-			case 5:
-				angle = 160;
-				break;
-			case 6:
-				angle = 200;
-				break;
-			case 7:
-				angle = 240;
-				break;
-			case 8:
-				angle = 280;
-				break;
-			case 9:
-				angle = 320;
-				break;
-		}
-		// 转动转盘
-		rotateFunc(data,angle);
+//		if(time==0){
+//			timeOut(); //网络超时
+//		}
+//		if(time==1){
+			// 判断对应奖品控制转盘角度
+			// 此处设定奖品项为数组data中的每项
+			var data = [1,2,3,4,5,6,7,8,9], //奖品项数组
+				angle = 0; //转动角度
+			//暂设为系统随机生成概率-------------------上线前需完善相关代码
+			data = data[Math.floor(Math.random()*data.length)]; 
+			
+			switch (data){
+				case 1:
+					angle = 360;
+					break;
+				case 2:
+					angle = 40;
+					break;
+				case 3:
+					angle = 80;
+					break;
+				case 4:
+					angle = 120;
+					break;
+				case 5:
+					angle = 160;
+					break;
+				case 6:
+					angle = 200;
+					break;
+				case 7:
+					angle = 240;
+					break;
+				case 8:
+					angle = 280;
+					break;
+				case 9:
+					angle = 320;
+					break;
+			}
+			// 转动转盘
+			rotateFunc(data,angle);
+//		}
 		
     }
     
@@ -331,13 +353,11 @@
 			$oBtnGoOn = $('.btn-goOn');
 		
 		$oBtnGoOn.on('click',function(){
-			if(!$oBtnGoOn.hasClass("btn-timeout")){
-				//释放转盘&指针 & 隐藏上一次中奖信息
-				$oGiftItem.show();
-				_arrow.show();
-				prize.hide();
-				$(this).hide();
-			}
+			//释放转盘&指针 & 隐藏上一次中奖信息
+			$oGiftItem.show();
+			_arrow.show();
+			prize.hide();
+			$(this).hide();
 		});
 	}
 	

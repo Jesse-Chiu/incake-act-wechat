@@ -40,22 +40,23 @@
 			<div class="rotary">
 				<img src="img/rotary-draw/turntable_bg.png" />
 				<img src="img/rotary-draw/gift_items.png" class="gift-item abs"/>
-				<img src="img/rotary-draw/btn_start2.png" class="btn-start abs"/>
+				<img src="img/rotary-draw/btn_start.png" class="btn-start abs"/>
 				<img src="img/rotary-draw/icon_arrow.png" class="gift-arrow abs"/>
 				<div class="gift-list abs">
-					<img src="img/rotary-draw/gift_bottle.png" class=".prize1"/>
-					<img src="img/rotary-draw/gift_iphone.png" class=".prize2"/>
-					<img src="img/rotary-draw/gift_coupon_50.png" class=".prize3"/>
-					<img src="img/rotary-draw/gift_barbie.png" class=".prize4"/>
-					<img src="img/rotary-draw/gift_minions.png" class=".prize5"/>
-					<img src="img/rotary-draw/gift_thomas.png" class=".prize6"/>
-					<img src="img/rotary-draw/gift_coupon_189.png" class=".prize7"/>
-					<img src="img/rotary-draw/gift_baby.png" class=".prize8"/>
-					<img src="img/rotary-draw/gift_vr.png" class=".prize9"/>
+					<img src="img/rotary-draw/gift_bottle.png" name="萌萌的天气瓶" class="prize1"/>
+					<img src="img/rotary-draw/gift_iphone.png" name="Iphone6自拍杆功能手机壳" class="prize2"/>
+					<img src="img/rotary-draw/gift_coupon_50.png" name="50元蛋糕优惠券" class="prize3 coupon"/>
+					<img src="img/rotary-draw/gift_barbie.png" name="生日芭比" class="prize4"/>
+					<img src="img/rotary-draw/gift_minions.png" name="小黄人大眼萌海底冒险套装" class="prize5"/>
+					<img src="img/rotary-draw/gift_thomas.png" name="托马斯和朋友之托比寻宝大冒险套装" class="prize6"/>
+					<img src="img/rotary-draw/gift_coupon_189.png" name="189元蛋糕优惠券" class="prize7 coupon"/>
+					<img src="img/rotary-draw/gift_baby.png" name="海绵宝宝套装" class="prize8"/>
+					<img src="img/rotary-draw/gift_vr.png" name="炫酷VR眼睛" class="prize9"/>
 				</div>
+				<a href="javascript:;" class="btn-goOn abs">继续抽奖</a>
 			</div>
 			
-			<p class="chance">可抽奖<span id="number">0</span>次！</p>
+			<p class="chance">可抽奖<span id="number">2</span>次<span id="count-down">，<i id="minute">4</i>分<i id="second">49</i>秒后失效</span>！</p>
 			
 			<div class="btnBox clearfix">
 				<img src="img/rotary-draw/icon_flower02.png" class="icon-flower2"/>
@@ -89,8 +90,68 @@
 			<p class="phone">400-921-5757</p>
 		</footer>
 		
+		<!-- 注册结果 begin -->
+        <div id="mask-result">
+            <div class="result">
+                <div class="result-content">
+                	<!-- 登录/注册 -->
+                	<div class="result-info result-login">
+                		<a href="javascript:;" class="btn-result-close"><img src="img/rotary-draw/btn_close.png" alt=""></a>
+		                <p class="register-title">登录/注册</p>
+		                <ul class="frm">
+		                    <li class="clearfix">
+		                        <i class="icon-mobile"></i>
+		                        <input type="text" class="txt-mobile" placeholder="请输入手机号">
+		                    </li>
+		                    <li class="clearfix">
+		                        <i class="icon-vcode"></i>
+		                        <input type="text" class="txt-vcode" placeholder="请输入验证码">
+		                        <a href="javascript:;" id="btn-vcode">获取验证码</a>
+		                    </li>
+		                </ul>
+		                <p class="tips">未通过验证相关提示信息</p>
+		                <a href="javascript:;" id="btn-register">完&nbsp;&nbsp;成</a>
+                    </div>
+                    <!-- 抽奖次数不足 -->
+                    <div class="result-info result-frequency">
+                    	<a href="javascript:;" class="btn-result-close"><img src="img/rotary-draw/btn_close.png" alt=""></a>
+                        <img src="img/rotary-draw/icon_tip01.png" class="tip-title">
+                        <p class="tip-text">当前抽奖次数为<span>0</span>，下单后可获得抽奖机会哦～</p>
+                        <a href="javascript:;" class="btn-go">去逛逛</a>
+                    </div>
+                    <!-- 超时 -->
+                    <div class="result-info result-timeout">
+                        <img src="img/rotary-draw/icon_tip02.png" class="tip-title">
+                        <p class="tip-text">介于奖品需要随订单发出，且您的订单已经开始配送，很遗憾错过了此次机会，谢谢您对incake的支持！</p>
+                        <a href="javascript:;" class="btn-ok">关 闭</a>
+                    </div>
+                    <!-- 中奖 -->
+                    <div class="result-info result-winning">
+                        <img src="img/rotary-draw/icon_tip01.png" class="tip-title">
+                        <p class="tip-text">恭喜获得<span>托马斯和朋友之托比寻宝大冒险套装</span>，该奖品会随单寄出，收到蛋糕后请注意查收～</p>
+                        <a href="javascript:;" class="btn-ok">知道了</a>
+                    </div>
+                    <!-- 未中奖 -->
+                    <div class="result-info result-lose">
+                        <img src="img/rotary-draw/icon_tip02.png" class="tip-title">
+                        <p class="tip-text">很可惜没有中奖哦～</p>
+                        <a href="javascript:;" class="btn-ok">知道了</a>
+                    </div>
+                    <!-- 奖品寄出 -->
+                    <div class="result-info result-getGift">
+                        <p class="tip-text">奖品：托马斯和朋友之托比寻宝大冒险套装、小黄人大眼萌海底冒险套装
+						<p class="tip-text">实物奖品寄送地址：随订单一起配送</p>
+						<p class="tip-text">寄送时间：随订单一起配送</p>
+                        <a href="javascript:;" class="btn-ok">关 闭</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 注册结果 end -->
+		
 		<!-- javascript -->
 		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
 		<script src="js/rotary-draw.js"></script>
 		<!-- javascript -->
 	</body>
