@@ -1,0 +1,19 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #fdf9ef; }
+.content .btn-buy { display: block; width: 48%; margin: 0 auto 30px; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+
+.content .rules { width: 80%;padding: 26px 10%; background-color: #a58d76; text-align: justify; color: #fff; }
+.content .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 18px; }
+.content .rules dd { line-height: 20px; }
+.content .rules dd span { color: #ffec93; }
+
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
