@@ -1,0 +1,30 @@
+body { max-width: 640px; margin: 0 auto; }
+.content .banner { position: relative; }
+.content .banner a { position: absolute; top: 6px; right: 24px; width: 15%; text-align: center; }
+.content .banner .return { width: 20px; height: 20px; }
+.content .banner a span { display: block; line-height: 18px; color: #0055a2; }
+
+.content .exchange { position: relative; width: 84%; padding: 0 8% 40px; background-color: #4e4c54; }
+.content .exchange:after{ position: absolute; bottom: 0; left: 5%; width: 90%; content: ''; border-bottom: 1px solid #fff; }
+
+.content .exchange .title { height: 50px; font-size: 18px; line-height: 50px; text-align: center; color: #fff; }
+.exchange li { width: 100%; height: 50px; margin-bottom: 15px; border-radius: 4px; overflow: hidden; }
+.exchange li input { width: 100%; height: 50px; background-color: #fff; border: none; border-radius: 0; text-indent: 1em; font-size: 16px; line-height: 50px; }
+.exchange li .txt-mobile { float: left; width: 65%; }
+.exchange li .btn-vcode { float: left; display: inline-block; width: 35%; height: 50px; background-color: #726d81; font-size: 14px; line-height: 50px; color: #fff; text-align: center; }
+.exchange li .btn-buy {  display: block; width: 100%; height: 50px; background-color: #e97b99; font-size: 16px; line-height: 50px; color: #fff; text-align: center;  }
+
+.content .rules { width: 80%;padding: 16px 10% 36px; background-color: #4e4c54; text-align: justify; color: #fff; }
+.content .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.content .rules dd { line-height: 20px; }
+.content .rules dd span { color: #ffec93; }
+
+/* 注册结果 */
+#mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; }
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 72%; max-width: 460px; background: #fff; margin: auto; border-radius: 6px; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.result img { width: 100%; }
+
+.result .result-content .result-info { display: none; width: 84%; margin: 16px auto 26px; }
+.result-content .result-info .tip-title { display: block; width: 30%; margin: 0 auto; }
+.result-content .result-info .tip-text { margin: 10px 0; font-size: 12px; line-height: 16px; text-align: justify; }
+.result-content .result-info .btn-ok { display: block; width: 100%; background-color: #0e2f8f; border-radius: 6px; font-size: 14px; line-height: 32px; text-align: center; color: #fff;  }
