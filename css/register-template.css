@@ -1,5 +1,7 @@
 .content { background-color: #aabbcc; }
 
+.content .banners { height: 1000px; background-color: pink; }
+
 #frm-register.section { width: 100%; padding: 10px 0 40px; background-color: #425670; }
 #frm-register .sec-header { width: 100%; }
 #frm-register .sec-header .sec-title { position: relative; width: 98%; height: 40px; margin: 0 auto 10px; background: #425670 url(../img/qixi-festival/title_bg.png) repeat-x; }
