@@ -1,0 +1,20 @@
+body { max-width: 640px; margin: 0 auto; background-color: #f8f7fd;}
+.content .banner { position: relative; }
+.content .banner a { position: absolute; bottom: 0; left: 44%; display: block; width: 32%; height: 8%; }
+
+.content .info { margin: 30px 0 50px; }
+
+.content .exchange { width: 92%; padding-bottom: 10px; background-color: #795b3e; border-radius: 4px; margin: 0 auto; }
+.content .exchange .title { height: 60px; font-size: 16px; line-height: 60px; text-align: center; color: #fff; }
+.exchange ul { width: 75%; margin: 0 auto; }
+.exchange li { width: 100%; height: 40px; margin-bottom: 15px; border-radius: 4px; overflow: hidden; }
+.exchange li input { width: 100%; height: 40px; background-color: #fff; border: none; border-radius: 0; text-indent: 1em; font-size: 14px; line-height: 40px; }
+.exchange li .txt-vcode { float: left; width: 55%; }
+.exchange li .btn-vcode { float: left; display: inline-block; width: 45%; height: 40px; background-color: #b78888; font-size: 14px; line-height: 40px; color: #fff; text-align: center; }
+.exchange li .btn-buy {  display: block; width: 100%; height: 40px; background-color: #ff9d12; font-size: 16px; line-height: 40px; color: #fff; text-align: center;  }
+
+.content .rules { position: relative; width: 88%; padding: 16px 6% 36px; background-color: #ead6bb; margin-top: 28px; text-align: justify; color: #8f6429; }
+.content .rules:after { position: absolute; top: -4%; right: 0; display: block; width: 24.6%; height: 26%; background: url(../img/iQIYI/icon_rule.png) no-repeat; background-size: contain; content: ''; }
+.content .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.content .rules dd { line-height: 20px; }
+.content .rules dd span { color: #ffec93; }
