@@ -1,0 +1,58 @@
+body { max-width: 640px; margin: 0 auto; }
+
+/* banner */
+.content .banner { position: relative; }
+/* 立即购买按钮-图片按钮 */
+.content .banner .btn-buy { position: absolute; bottom: 10%; left: 35%; display: block; width: 30%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+/* 立即购买按钮-文字按钮 */
+.content .banner .btn-buy2 { position: absolute; bottom: 30%; left: 30%; display: block; width: 40%; height: 30px; font-size: 14px; line-height: 30px; text-align: center; color: #fff; background-color: orange; opacity: .5; }
+
+/* 呼吸灯样式  */
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
+
+/* 登录、注册 */
+.content .box-register { width: 88%; padding: 0 6% 20px; background-color: #4e4c54; }
+.content .box-register .title { height: 50px; font-size: 16px; line-height: 50px; text-align: center; color: #fff; }
+.box-register li { width: 100%; height: 50px; margin-bottom: 15px; border-radius: 4px; overflow: hidden; }
+.box-register li input { width: 100%; height: 50px; background-color: #fff; border: none; border-radius: 0; text-indent: 1em; font-size: 16px; line-height: 50px; }
+.box-register li .txt-mobile { float: left; width: 65%; }
+.box-register li .btn-vcode { float: left; display: inline-block; width: 35%; height: 50px; background-color: #726d81; font-size: 14px; line-height: 50px; color: #fff; text-align: center; }
+.box-register li .btn-buy {  display: block; width: 100%; height: 50px; background-color: #e97b99; font-size: 16px; line-height: 50px; color: #fff; text-align: center;  }
+
+/* 活动规则  */
+.box-rules .rules { width: 80%;padding: 16px 10% 36px; background-color: #c0b5c6; text-align: justify; color: #fff; }
+.box-rules .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.box-rules .rules dd { line-height: 20px; }
+
+/* 活动规则2  */
+.content .box-rules2 { margin-top: 10px; }
+.box-rules2 .rules { width: 80%;padding: 16px 10% 36px; background-color: #c0b5b6; text-align: justify; color: #fff; }
+.box-rules2 .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.box-rules2 .rules dd { position: relative; width: 96%; padding-left: 4%; line-height: 20px; }
+.box-rules2 .rules dd span { position: absolute; top: 0; left: 0; display: inline-block; }
+
+/* 活动规则3  */
+.content .box-rules3 { margin-top: 10px; }
+.box-rules3 .rules { width: 80%;padding: 16px 10% 36px; background-color: #c0b5d6; text-align: justify; color: #fff; }
+.box-rules3 .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.box-rules3 .rules dd { position: relative; width: 97%; padding-left: 3%; line-height: 20px; }
+.box-rules3 .rules dd:after { position: absolute; top: 0; left: 0; display: inline-block; width: 2%; content: '♦';}/*●♦*/
+
+/* 活动过期提示 */
+#mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; }
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 72%; max-width: 460px; background: #fff; margin: auto; border-radius: 6px; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.result img { width: 100%; }
+
+.result .result-content .result-info { display: none; width: 84%; margin: 16px auto 26px; }
+.result-content .result-info .tip-title { display: block; width: 30%; margin: 0 auto; }
+.result-content .result-info .tip-text { margin: 10px 0; font-size: 12px; line-height: 16px; text-align: center; }
+.result-content .result-info .btn-ok { display: block; width: 100%; background-color: #0e2f8f; border-radius: 6px; font-size: 14px; line-height: 32px; text-align: center; color: #fff;  }
