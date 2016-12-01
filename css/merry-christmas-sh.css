@@ -1,0 +1,28 @@
+body { max-width: 640px; margin: 0 auto; }
+
+/* banner */
+.content .banner { position: relative; }
+/* 立即购买按钮-图片按钮 */
+.content .banner .btn-buy { position: absolute; top: 35%; left: 52%; display: block; width: 30%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+.content .banner2 .btn-buy { top: 28%; left: 68%; }
+/* 呼吸灯样式  */
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
+
+/* 活动过期提示 */
+#mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; }
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 72%; max-width: 460px; background: #fff; margin: auto; border-radius: 6px; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.result img { width: 100%; }
+
+.result .result-content .result-info { display: none; width: 84%; margin: 16px auto 26px; }
+.result-content .result-info .tip-title { display: block; width: 30%; margin: 0 auto; }
+.result-content .result-info .tip-text { margin: 10px 0; font-size: 12px; line-height: 16px; text-align: center; }
+.result-content .result-info .btn-ok { display: block; width: 100%; background-color: #0e2f8f; border-radius: 6px; font-size: 14px; line-height: 32px; text-align: center; color: #fff;  }
