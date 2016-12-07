@@ -3,8 +3,8 @@ body { max-width: 640px; margin: 0 auto; }
 /* banner */
 .content .banner { position: relative; }
 /* 立即购买按钮-图片按钮 */
-.content .banner .btn-buy { position: absolute; top: 35%; left: 52%; display: block; width: 30%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
-.content .banner2 .btn-buy { top: 28%; left: 68%; }
+.content .banner .btn-buy { position: absolute; top: 32%; left: 52%; display: block; width: 30%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+.content .banner2 .btn-buy { top: 17%; left: 68%; }
 /* 呼吸灯样式  */
 @-webkit-keyframes smooth {
 	0% { -webkit-transform: scale(1); }
