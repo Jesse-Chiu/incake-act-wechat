@@ -80,19 +80,46 @@
 			<p class="phone">400-921-5757</p>
 		</footer>
 		
-		<!-- 活动过期提示 begin -->
+        <!-- 弹窗提示 begin -->
         <div id="mask-result">
             <div class="result">
+                <a href="javascript:;" class="btn-result-close">
+                    <img src="img/kunbao/btn_close.png" alt="">
+                </a>
                 <div class="result-content">
-                    <div class="result-info result-timeout">
+                	<div class="result-info result-timeout">
                         <img src="img/act-common/icon_tip02.png" class="tip-title">
                         <p class="tip-text">该活动已结束！</p>
                         <a href="javascript:;" class="btn-ok">关 闭</a>
                     </div>
+                	<div class="result-info result-login">
+		                <p class="register-title">登录/注册</p>
+		                <ul class="frm">
+		                    <li class="clearfix">
+		                        <i class="icon-mobile"></i>
+		                        <input type="text" class="txt-mobile" placeholder="请输入手机号">
+		                    </li>
+		                    <li class="clearfix">
+		                        <i class="icon-vcode"></i>
+		                        <input type="text" class="txt-vcode" placeholder="请输入验证码">
+		                        <a href="javascript:;" id="btn-vcode">获取验证码</a>
+		                    </li>
+		                </ul>
+		                <p class="tips">未通过验证相关提示信息</p>
+		                <a href="javascript:;" id="btn-register">完&nbsp;&nbsp;成</a>
+                    </div>
+                    <div class="result-info result-success">
+                        <img src="img/kunbao/result_ok.jpg" alt="">
+                        <a href="javascript:;" >去使用</a>
+                    </div>
+                    <div class="result-info result-fail">
+                        <img src="img/kunbao/result_fail.jpg" alt="">
+                        <a href="javascript:;" >去看看</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- 活动过期提示 end -->
+        <!-- 弹窗提示 end -->
 		
 		<script src="zepto/zepto.min.js"></script>
 		<script src="dialog2/js/dialog.js"></script>
