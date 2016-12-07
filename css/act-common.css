@@ -47,12 +47,34 @@ body { max-width: 640px; margin: 0 auto; }
 .box-rules3 .rules dd { position: relative; width: 97%; padding-left: 3%; line-height: 20px; }
 .box-rules3 .rules dd:after { position: absolute; top: 0; left: 0; display: inline-block; width: 2%; content: '♦';}/*●♦*/
 
-/* 活动过期提示 */
+/* 弹窗提示 */
 #mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; }
-#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 72%; max-width: 460px; background: #fff; margin: auto; border-radius: 6px; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
-.result img { width: 100%; }
+#mask-result img { width: 100%; }
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 72%; max-width: 460px; /*width: 73.4%; max-width: 500px;*/ background: #fff; margin: auto; border-radius: 6px; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .btn-result-close { display: block; position: absolute; top: 5%; right: 5%; width: 9%; z-index: 999; }
 
-.result .result-content .result-info { display: none; width: 84%; margin: 16px auto 26px; }
-.result-content .result-info .tip-title { display: block; width: 30%; margin: 0 auto; }
-.result-content .result-info .tip-text { margin: 10px 0; font-size: 12px; line-height: 16px; text-align: center; }
-.result-content .result-info .btn-ok { display: block; width: 100%; background-color: #0e2f8f; border-radius: 6px; font-size: 14px; line-height: 32px; text-align: center; color: #fff;  }
+#mask-result .result-content .result-info { display: none; width: 100%; }
+#mask-result .result-content .result-info a { display: block; width: 100%; background-color: #0e2f8f; border-radius: 6px; font-size: 16px; line-height: 40px; text-align: center; color: #fff; }
+
+#mask-result .result-content .result-timeout { width: 84%; margin: 16px auto 26px; }
+#mask-result .result-content .result-timeout .tip-title { display: block; width: 30%; margin: 0 auto; }
+#mask-result .result-content .result-timeout .tip-text { margin: 10px 0; font-size: 12px; line-height: 16px; text-align: center; }
+#mask-result .result-content .result-timeout a { font-size: 14px; line-height: 32px; }
+
+#mask-result .result-content .result-login .register-title { width: 60%; height: 20px; margin: 10% auto 8%; font-size: 18px; line-height: 20px; text-align: center; }
+#mask-result .result-content .result-login .frm { width: 80%; margin: 0 auto; }
+#mask-result .result-login li { margin-bottom: 10px; position: relative; }
+#mask-result .result-login li input { display: block; height: 40px; line-height: 40px; text-indent: 2.6em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; }
+#mask-result .result-login li .txt-vcode { float: left; width: 60%; border-radius: 5px 0 0 5px; }
+#mask-result .result-login li #btn-vcode { float: left; width: 40%; height: 40px; line-height: 40px; margin-left: -4px; text-align: center; border: 1px solid #ddd; border-radius: 0 5px 5px 0; color: #fff; background-color: #8bade5; }
+#mask-result .result-login li a { font-size: 12px; }
+#mask-result .result-login li .txt-mobile { width: 100%; }
+#mask-result .result-login li .icon-mobile { position: absolute; width: 9%; height: 100%; margin-left: 3%; background: url('../img/kunbao/icon_mobile.png') no-repeat; background-size: contain; background-position: left center;  }
+#mask-result .result-login li .icon-vcode { position: absolute; width: 10%; height: 100%; margin-left: 3%; background: url('../img/kunbao/icon_vcode.png') no-repeat; background-size: contain; background-position: left center;  }
+#mask-result .result-login .tips { width: 80%; margin: -4px auto 0; font-size: 12px; line-height: 12px; color: #d13c4f; }
+#mask-result .result-login #btn-register { display: block; width: 80%; height: 42px; margin: 14px auto 28px; font-size: 16px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #0e2f8f; color: #fff; }
+
+#mask-result .result-content .result-success,
+#mask-result .result-content .result-fail { position: relative; }
+#mask-result .result-content .result-success a,
+#mask-result .result-content .result-fail a { position: absolute; bottom: 9%; left: 32%; width: 36%; }
