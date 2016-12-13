@@ -1,0 +1,28 @@
+body { max-width: 640px;00px; margin: 0 auto; }
+.content { background: url(../img/kol/01.png)no-repeat;width:100%;} 
+.clearfix{position: relative;top: 0;left: 0;}
+.clearfix img{width: 100%;}
+.shade{position: fixed;top:0px;left: 0;width:100%;height:1900px;background: black;opacity:0.8;z-index: 1;display: none;}
+#shade_a{position: relative;}
+.img,.rule,.info,.info_a,.rule_a,.rule_b,.info_b{z-index: 9999;}
+.rule{width: 1%;height: 6%;border-bottom: 70px solid red;border-right: 70px solid transparent;
+		position: absolute;bottom:4%;left: 6%;opacity: 0;display: block;cursor: pointer;}
+.order{width: 50px;height: 50px;border-radius: 50%;position: absolute;bottom:2%;left: 71%;display: block;}
+.info{position: absolute;margin-top:-124%;display: none;}
+.info span{display: block;width: 30px;height:30px;border-radius: 50%;position: absolute;top:0;left: 83%;}
+.contenter{position: relative;top: 0;left: 0;}
+.rule_a{width: 1%;height: 6%;border-bottom: 70px solid red;border-right: 70px solid transparent;
+		position: absolute;bottom:4%;left: 6%;opacity: 0;display: block;cursor: pointer;}
+.order_a{width: 50px;height: 50px;border-radius: 50%;position: absolute;bottom:2%;left: 71%;display: block;}
+.info_a{position: absolute;margin-top:-124%;display: none;}
+.info_a span{display: block;width: 30px;height:30px;border-radius: 50%;position: absolute;top:0;left: 83%;}
+.footer{position: relative;top: 0;left: 0;}
+.rule_b{width: 1%;height: 6%;border-bottom: 70px solid red;border-right: 70px solid transparent;
+		position: absolute;bottom:4%;left: 6%;opacity: 0;display: block;cursor: pointer;}
+.order_b{width: 50px;height: 50px;border-radius: 50%;position: absolute;bottom:2%;left: 71%;display: block;}
+.info_b{position: absolute;margin-top:-130%;display: none;}
+.info_b span{display: block;width: 30px;height:30px;border-radius: 50%;position: absolute;top:0;left: 83%;}
+.animat{animation: zoom 0.6s;}
+@keyframes zoom {from {transform: scale(0.1)}to {transform: scale(1)}}
+.anima{animation: zoomm 0.6s;}
+@keyframes zoo {from {transform: scale(1)}to {transform: scale(0.1)}}
