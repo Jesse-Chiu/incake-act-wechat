@@ -1,0 +1,10 @@
+.content img { width: 100%; }
+.content .banner, .content .cake, .content .rules { width: 100%; }
+.content .cake { position: relative; }
+.content .cake .btn { display: block; position: absolute; } 
+.content .cake01 .btn { width: 32%; top: 45%; right: 10%; }
+.content .cake02 .btn { width: 32%; top: 52%; left: 9%; }
+.content .cake03 .btn { width: 32%; top: 44%; right: 11%; }
+.content .rules { width: 86%; padding: 15px 5%; background-color: #aa9691; color: #fff; }
+.content .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 14px; }
+.content .rules dd { font-size: 12px; line-height: 20px; text-align: justify; }
