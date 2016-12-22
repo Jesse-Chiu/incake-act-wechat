@@ -1,18 +1,29 @@
 (function($, window, document) {
 	$(function() {
 		
+		// 解决Zepto点透bug
+		FastClick.attach(document.body);
+
+		// 初始化操作
 		fnInit();
+		
+		// 城市选择
+		fnSendCity();
 		
 	});
 	
     function fnInit(){
         var $oContent = $('.content'),
             $oBtnVcode = $oContent.find('.btn-vcode'),
-            $oBtnBuy = $oContent.find('.btn-buy'),
-            regOverdue = true, // 活动过期验证
+            $oBtnExchange = $oContent.find('.btn-exchange'),
+            $oMaskResult = $('#mask-result'),
+            $oResultInfo = $oMaskResult.find(".result-info"),
+            $oBtnCloseMask = $oMaskResult.find('.btn-result-close'),
+            regOverdue = false, // 活动过期验证
             regMobile = false, // 手机号验证
             regVcode = false,  // 验证码验证
             regCoupon = false,  // 优惠券验证
+            regCity = true,	//城市选择
             tips = '操作失败', // 提示信息
             icon = 'dialog2/images/icon/fail.png',
             time = 58;
@@ -21,7 +32,7 @@
         if(regOverdue){
     		var $oMaskResult = $('#mask-result'),
     			$oTimeOut = $oMaskResult.find(".result-timeout"),
-    			$aBtnClose =  $oMaskResult.find(".btn-ok");
+    			$aBtnClose =  $oTimeOut.find(".btn-close");
     		
     		// 展示相应弹窗
         	$oMaskResult.css("display",'block');
@@ -34,8 +45,31 @@
     		});
         }
         
+        // 城市选择验证
+        if(regCity){
+    		var $oMaskResult = $('#mask-result'),
+    			$oCheckCity = $oMaskResult.find(".result-check-city"),
+    			$ali = $oCheckCity.find('li'),
+    			$aBtnConfirm =  $oCheckCity.find(".btn-confirm");
+    		
+    		// 展示相应弹窗
+        	$oMaskResult.css("display",'block');
+    		$oCheckCity.css('display','block');
+        	
+        	$ali.on('tap',function(){
+        		$ali.removeClass('active');
+        		$(this).addClass('active');
+        	});
+        	
+    		// 关闭弹窗
+    		$aBtnConfirm.on("tap",function(){
+    			$oMaskResult.css("display",'none');
+        		$oCheckCity.css('display','none');
+    		});
+        }
+        
         // 获取验证码
-	    $oBtnVcode.on("click",function(){
+	    $oBtnVcode.on("tap",function(){
 	    	$oBtnVcode.css('backgroundColor','#c8c8c8').text('59" 后重新发送');
 	    	var interval = setInterval(function(){
 	    		$oBtnVcode.text(time-- +'" 后重新发送');
@@ -49,7 +83,7 @@
 		});
         
 	    // 立即兑换
-        $oBtnBuy.on('click', function(event) {
+        $oBtnExchange.on('tap', function(event) {
         	
         	// 手机号验证
         	if(regMobile){
@@ -77,6 +111,40 @@
 			});
 			
         });
+        
+        // 关闭弹窗
+		$oBtnCloseMask.on("tap",function(){
+			$oMaskResult.css("display",'none');
+    		$oResultInfo.css('display','none');
+		});
 
     }
+    
+    // 城市选择
+    function fnSendCity(){
+        var $oContent = $('.content'),
+            $oLocation = $oContent.find('.city-location'),
+            $oPopup = $oContent.find('.location-popup'),
+            $aLi = $oPopup.find('li');
+
+        $oLocation.on('tap', function() {
+            if($oPopup.hasClass('active')){
+           		$oPopup.hide(500);
+           		$oPopup.removeClass('active');
+            }else{
+           		$oPopup.show(500);
+           		$oPopup.addClass('active');
+            }
+        });
+		
+		$aLi.on('tap',function(){
+			$aLi.removeClass('active');
+			$(this).addClass('active');
+			$('.addr-cur').text($(this).text());
+			$oPopup.hide(500);
+       		$oPopup.removeClass('active');
+		});
+        
+    }
+    
 })(Zepto, window, document);

@@ -18,7 +18,29 @@
 				<a href="javascript:;" class="btn-buy"><img src="img/act-common/btn_buy.png"/></a>
 				<a href="javascript:;" class="btn-buy2">我是按钮</a>
 			</div>
-			
+			<!-- 城市选择 -->
+			<div class="send-city clearfix">
+				<p class="send-text"><img src="img/act-common/send_city.png"/></p>
+				<div class="city-location clearfix" >
+					<i class="icon-addr"><img src="img/act-common/icon_addr.png"/></i>
+					<span class="addr-cur">上海</span>
+					<i class="icon-arrow"><img src="img/act-common/arrow.png"/></i>
+	            </div>
+	            <div class="location-popup">
+                    <p>请选择您要配送的城市：</p>
+                    <ul class="clearfix">
+                        <li class="active">上海</li>
+                        <li>苏州</li>
+                        <li>昆山</li>
+                        <li>福州</li>
+                        <li>厦门</li>
+                        <li>南京</li>
+                        <li>北京</li>
+                        <li>杭州</li>
+                        <li>无锡</li>
+                    </ul>
+                </div>
+			</div>
 			<!-- 登录、注册 --> 
 			<div class="box box-register">
 				<p class="title">标题标题标题标题~</p>
@@ -31,7 +53,7 @@
 						<input type="number" class="txt-vcode" placeholder="请输入验证码" />
 					</li>
 					<li>
-						<a href="javacript:;" class="btn-buy">立即兑换</a>
+						<a href="javacript:;" class="btn-exchange">立即兑换</a>
 					</li>
 				</ul>
 			</div>
@@ -84,13 +106,13 @@
         <div id="mask-result">
             <div class="result">
                 <a href="javascript:;" class="btn-result-close">
-                    <img src="img/kunbao/btn_close.png" alt="">
+                    <img src="img/act-common/btn_close.png" alt="">
                 </a>
                 <div class="result-content">
                 	<div class="result-info result-timeout">
                         <img src="img/act-common/icon_tip02.png" class="tip-title">
                         <p class="tip-text">该活动已结束！</p>
-                        <a href="javascript:;" class="btn-ok">关 闭</a>
+                        <a href="javascript:;" class="btn-close">关 闭</a>
                     </div>
                 	<div class="result-info result-login">
 		                <p class="register-title">登录/注册</p>
@@ -109,12 +131,27 @@
 		                <a href="javascript:;" id="btn-register">完&nbsp;&nbsp;成</a>
                     </div>
                     <div class="result-info result-success">
-                        <img src="img/kunbao/result_ok.jpg" alt="">
+                        <img src="img/act-common/icon_tip01.png" class="tip-title">
+                        <p class="tip-text">成功提示信息，非真正内容，非真正内容</p>
                         <a href="javascript:;" >去使用</a>
                     </div>
                     <div class="result-info result-fail">
-                        <img src="img/kunbao/result_fail.jpg" alt="">
+                        <img src="img/act-common/icon_tip02.png" class="tip-title">
+                        <p class="tip-text">失败提示信息，失败提示信息，失败提示信息，失败提示信息，失败提示信息，失败提示信息</p>
                         <a href="javascript:;" >去看看</a>
+                    </div>
+                    <div class="result-info result-check-city">
+                        <p class="tip-title">请选择城市</p>
+                        <ul class="clearfix">
+                        	<li>上海市</li>
+                        	<li class="active">上海市</li>
+                        	<li>上海市</li>
+                        	<li>上海市</li>
+                        	<li>上海市</li>
+                        	<li>上海市</li>
+                        	<li>上海市</li>
+                        </ul>
+                        <a href="javascript:;" class="btn-confirm">确&nbsp;定</a>
                     </div>
                 </div>
             </div>
@@ -122,6 +159,8 @@
         <!-- 弹窗提示 end -->
 		
 		<script src="zepto/zepto.min.js"></script>
+		<script src="zepto/touch.js"></script>
+		<script src="zepto/fastclick.js"></script>
 		<script src="dialog2/js/dialog.js"></script>
 		<script src="js/act-common.js"></script>
 		

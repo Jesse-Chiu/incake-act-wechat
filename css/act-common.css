@@ -5,7 +5,7 @@ body { max-width: 640px; margin: 0 auto; }
 /* 立即购买按钮-图片按钮 */
 .content .banner .btn-buy { position: absolute; bottom: 10%; left: 35%; display: block; width: 30%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
 /* 立即购买按钮-文字按钮 */
-.content .banner .btn-buy2 { position: absolute; bottom: 30%; left: 30%; display: block; width: 40%; height: 30px; font-size: 14px; line-height: 30px; text-align: center; color: #fff; background-color: orange; opacity: .5; }
+.content .banner .btn-buy2 { position: absolute; bottom: 30%; left: 30%; display: block; width: 40%; height: 30px; font-size: 14px; line-height: 30px; text-align: center; color: #fff; background-color: orange; }
 
 /* 呼吸灯样式  */
 @-webkit-keyframes smooth {
@@ -19,6 +19,25 @@ body { max-width: 640px; margin: 0 auto; }
 	100% { transform: scale(1); }
 }
 
+/* 城市选择  */
+.content .send-city { position: relative; width: 90%; padding: 30px 5%; margin: 0 auto; background-color: pink; }
+.content .send-city i,
+.content .send-city span { float: left; display: inline-block; }
+.content .send-city i img { vertical-align: middle; }
+.content .send-city .send-text { float: left; width: 65%; }
+.content .send-city .city-location { float: right; width: 25%; height: 32px; padding: 0 4%; background-color: #bc9f61; border-radius: 4px; font-size: 16px; line-height: 32px; color: #fff; }
+.content .send-city .city-location .icon-addr { width: 20%; }
+.content .send-city .city-location .addr-cur { width: 54%; text-align: center; }
+.content .send-city .city-location .icon-arrow { float: right; width: 22%; }
+
+.content .location-popup { display: none; position: absolute; right: 20px; top: 70px; width: 60%; padding: 20px 6%; background-color: #F1F0F6; border-radius: 4px; z-index: 999; }
+.content .location-popup > p { margin-bottom: 20px; font-size: 16px; color: #000; line-height: 16px; text-align: center; }
+.content .location-popup > ul { width: 100%; }
+.content .location-popup > ul li { float: left; width: 22%; margin: 0 4% 10px 0; font-size: 14px; line-height: 24px; text-align: center; color: #282828; }
+.content .location-popup > ul li.active,
+.content .location-popup > ul li:hover { background-color: #bc9f61; color: #fff; }
+.content .location-popup > ul li:nth-of-type(4n) { margin-right: 0; }
+
 /* 登录、注册 */
 .content .box-register { width: 88%; padding: 0 6% 20px; background-color: #4e4c54; }
 .content .box-register .title { height: 50px; font-size: 16px; line-height: 50px; text-align: center; color: #fff; }
@@ -26,7 +45,7 @@ body { max-width: 640px; margin: 0 auto; }
 .box-register li input { width: 100%; height: 50px; background-color: #fff; border: none; border-radius: 0; text-indent: 1em; font-size: 16px; line-height: 50px; }
 .box-register li .txt-mobile { float: left; width: 65%; }
 .box-register li .btn-vcode { float: left; display: inline-block; width: 35%; height: 50px; background-color: #726d81; font-size: 14px; line-height: 50px; color: #fff; text-align: center; }
-.box-register li .btn-buy {  display: block; width: 100%; height: 50px; background-color: #e97b99; font-size: 16px; line-height: 50px; color: #fff; text-align: center;  }
+.box-register li .btn-exchange {  display: block; width: 100%; height: 50px; background-color: #e97b99; font-size: 16px; line-height: 50px; color: #fff; text-align: center;  }
 
 /* 活动规则  */
 .box-rules .rules { width: 80%;padding: 16px 10% 36px; background-color: #c0b5c6; text-align: justify; color: #fff; }
@@ -50,19 +69,23 @@ body { max-width: 640px; margin: 0 auto; }
 /* 弹窗提示 */
 #mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; }
 #mask-result img { width: 100%; }
-#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 72%; max-width: 460px; /*width: 73.4%; max-width: 500px;*/ background: #fff; margin: auto; border-radius: 6px; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
-#mask-result .result .btn-result-close { display: block; position: absolute; top: 5%; right: 5%; width: 9%; z-index: 999; }
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 90%; max-width: 460px; /*width: 73.4%; max-width: 500px;*/ background: #fff; margin: auto; border-radius: 6px; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .btn-result-close { display: block; position: absolute; top: 4%; right: 3%; width: 8%; z-index: 999; }
 
-#mask-result .result-content .result-info { display: none; width: 100%; }
-#mask-result .result-content .result-info a { display: block; width: 100%; background-color: #0e2f8f; border-radius: 6px; font-size: 16px; line-height: 40px; text-align: center; color: #fff; }
+#mask-result .result-info { display: none; width: 100%; }
+#mask-result .result-info a { display: block; width: 100%; background-color: #0e2f8f; border-radius: 6px; font-size: 16px; line-height: 40px; text-align: center; color: #fff; }
+#mask-result .result-info .tip-title { display: block; width: 30%; margin: 0 auto; }
+#mask-result .result-info .tip-text { margin: 10px 0; font-size: 12px; line-height: 16px; text-align: center; }
 
-#mask-result .result-content .result-timeout { width: 84%; margin: 16px auto 26px; }
-#mask-result .result-content .result-timeout .tip-title { display: block; width: 30%; margin: 0 auto; }
-#mask-result .result-content .result-timeout .tip-text { margin: 10px 0; font-size: 12px; line-height: 16px; text-align: center; }
-#mask-result .result-content .result-timeout a { font-size: 14px; line-height: 32px; }
+#mask-result .result-timeout,
+#mask-result .result-success,
+#mask-result .result-fail { width: 84%; margin: 16px auto 26px; }
+#mask-result .result-timeout a,
+#mask-result .result-success a,
+#mask-result .result-fail a { font-size: 14px; line-height: 32px; }
 
-#mask-result .result-content .result-login .register-title { width: 60%; height: 20px; margin: 10% auto 8%; font-size: 18px; line-height: 20px; text-align: center; }
-#mask-result .result-content .result-login .frm { width: 80%; margin: 0 auto; }
+#mask-result .result-login .register-title { width: 60%; height: 20px; margin: 10% auto 8%; font-size: 18px; line-height: 20px; text-align: center; }
+#mask-result .result-login .frm { width: 80%; margin: 0 auto; }
 #mask-result .result-login li { margin-bottom: 10px; position: relative; }
 #mask-result .result-login li input { display: block; height: 40px; line-height: 40px; text-indent: 2.6em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; }
 #mask-result .result-login li .txt-vcode { float: left; width: 60%; border-radius: 5px 0 0 5px; }
@@ -74,7 +97,15 @@ body { max-width: 640px; margin: 0 auto; }
 #mask-result .result-login .tips { width: 80%; margin: -4px auto 0; font-size: 12px; line-height: 12px; color: #d13c4f; }
 #mask-result .result-login #btn-register { display: block; width: 80%; height: 42px; margin: 14px auto 28px; font-size: 16px; line-height: 42px; text-align: center; border-radius: 5px; background-color: #0e2f8f; color: #fff; }
 
-#mask-result .result-content .result-success,
-#mask-result .result-content .result-fail { position: relative; }
-#mask-result .result-content .result-success a,
-#mask-result .result-content .result-fail a { position: absolute; bottom: 9%; left: 32%; width: 36%; }
+/*#mask-result .result-success,
+#mask-result .result-fail { position: relative; }
+#mask-result .result-success a,
+#mask-result .result-fail a { position: absolute; bottom: 9%; left: 32%; width: 36%; }*/
+
+#mask-result .result-check-city { width: 100%; }
+#mask-result .result-check-city .tip-title { width: 90%; border-bottom: 1px solid #123876; margin: 10px auto 0; font-size: 14px; line-height: 36px; text-indent: .5em; color: #123876; }
+#mask-result .result-check-city ul { width: 80%; margin: 20px auto 10px; }
+#mask-result .result-check-city li { float: left; width: 28%; margin: 0 6% 10px 0; font-size: 14px; line-height: 30px; text-align: center; color: #282828; border: 1px solid #ccc; border-radius: 4px; }
+#mask-result .result-check-city li.active { background-color: #f0f0f0; border-color: #123876; color: #123876; }
+#mask-result .result-check-city li:nth-of-type(3n) { margin-right: 0; }
+#mask-result .result-check-city .btn-confirm { background-color: #123876; border-radius: 0; }
