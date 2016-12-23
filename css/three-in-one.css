@@ -5,6 +5,8 @@
 .content .cake01 .btn { width: 32%; top: 45%; right: 10%; }
 .content .cake02 .btn { width: 32%; top: 52%; left: 9%; }
 .content .cake03 .btn { width: 32%; top: 44%; right: 11%; }
-.content .rules { width: 86%; padding: 15px 5%; background-color: #aa9691; color: #fff; }
-.content .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 14px; }
-.content .rules dd { font-size: 12px; line-height: 20px; text-align: justify; }
+
+.content .rules { width: 80%;padding: 16px 10% 36px; background-color: #aa9691; text-align: justify; color: #fff; }
+.content .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.content .rules dd { position: relative; width: 97%; padding-left: 3%; font-size: 12px; line-height: 20px; }
+.content .rules dd:after { position: absolute; top: 0; left: 0; display: inline-block; width: 2%; content: '♦';}
