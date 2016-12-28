@@ -1,0 +1,12 @@
+body { max-width: 640px; margin: 0 auto; }
+
+.content { background: url(../img/kaffirl-lily/bg.jpg) no-repeat; background-size: contain; }
+.content .date { width: 100%; height: 30px; font-size: 12px; line-height: 30px; color: #c30d23; text-align: center; }
+.content .banner { display: block; width: 60.8%; margin: 10px auto 20px; }
+.content .text { display: block; width: 68.8%; margin: 0 auto; }
+
+.content .btn-buy { display:block; width: 26%; height: 24px; background-color: #c30d23; border-radius: 4px; margin: 14px auto 30px; font-size: 14px; line-height: 24px; color: #fff; text-align: center; }
+
+.content .rules { width: 90%;padding: 20px 5%; background-color: #c30d23; text-align: center; color: #fff; }
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px; }
+.content .rules dd{ line-height: 20px; }
