@@ -11,32 +11,45 @@
 	
     function fnInit(){
         var $oContent = $('.content'),
+        	$oBtnBuy = $oContent.find('.btn-buy'),
             $oMaskResult = $('#mask-result'),
             $oBtnVcode = $oMaskResult.find('.btn-vcode'),
             $oResultInfo = $oMaskResult.find(".result-info"),
             $oBtnReg = $oResultInfo.find('#btn-register'),
             $oRegTip = $oResultInfo.find('.tips'),
             $oBtnCloseMask = $oMaskResult.find('.btn-result-close'),
+            regLogin = false, // 验证是否登录
             regMobile = true, // 手机号验证
             regVcode = true,  // 验证码验证
+            regUser = false, // 新老用户验证   true：新用户   false：老用户
+            tipIcon = 'dialog2/images/icon/success.png',
+            tipText = '领取成功',
+            count = 0, // 验证重复获取验证码
+            _interval = '',
             time = 58;
         
         setTimeout(function(){
         	$oMaskResult.fadeIn();
         },2000);
         
-        
         // 获取验证码
 	    $oBtnVcode.on("tap",function(){
-	    	$oBtnVcode.text('59" 后重新发送');
-	    	var interval = setInterval(function(){
-	    		$oBtnVcode.text(time-- +'" 后重新发送');
-	    		if(time==-1){
-	    			clearInterval(interval);
-	    			time = 58;
-	    			$oBtnVcode.text('获取验证码');
-	    		}
-	    	},1000);
+	    	// 验证重复获取验证码
+	    	if(count == 0){
+	    		count = 1;
+		    	$oBtnVcode.css({'background-color':'#99807f','border-color':'#99807f'});
+		    	$oBtnVcode.text('59" 后重新发送');
+		    	_interval = setInterval(function(){
+		    		$oBtnVcode.text(time-- +'" 后重新发送');
+		    		if(time==-1){
+		    			count = 0;
+		    			clearInterval(_interval);
+		    			time = 58;
+		    			$oBtnVcode.text('获取验证码');
+		    			$oBtnVcode.css({'background-color':'#983023','border-color':'#983023'});
+		    		}
+		    	},1000);
+	    	}	    	
 		});
         
 	    // 立即领取
@@ -46,16 +59,23 @@
         	if(regMobile){
         		// 验证码验证
         		if(regVcode){
+        			//新老用户验证
+        			if(regUser){
+						tipIcon='dialog2/images/icon/success.png';
+						tipText='领取成功';
+        			}else{
+        				tipIcon = 'dialog2/images/icon/fail.png';
+						tipText = '您已是老用户';
+        			}
+	    			clearInterval(_interval);
         			$oMaskResult.fadeOut();
-//  				setTimeout(function(){
-			        	$(document).dialog({
-							type: 'toast',
-							infoIcon: 'dialog2/images/icon/success.png',
-							infoText: '领取成功',
-							autoClose: '1500'
-						});
-//			        },1000);
-    				
+		        	$(document).dialog({
+						type: 'toast',
+						infoIcon: tipIcon,
+						infoText: tipText,
+						autoClose: '1500'
+					});
+					regLogin = true;
         		}else{
         			$oRegTip.text('验证码不正确');
         		}
@@ -67,9 +87,24 @@
         
         // 关闭弹窗
 		$oBtnCloseMask.on("tap",function(){
+			$oResultInfo.find('input').val('');
+			$oBtnVcode.text('获取验证码');
+			$oBtnVcode.css({'background-color':'#983023','border-color':'#983023'});
+			clearInterval(_interval);
+			time = 58;
+			count = 0;
 			$oMaskResult.fadeOut();
 		});
-
+		
+		// 立即订购
+		$oBtnBuy.on("tap",function(){
+			if(regLogin){
+				// 跳转至相应页面
+			}else{
+				$oMaskResult.fadeIn();
+			}
+		});
+		
     }
     
 })(Zepto, window, document);
