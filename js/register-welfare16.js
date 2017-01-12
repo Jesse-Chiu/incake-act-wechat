@@ -12,6 +12,7 @@
     function fnInit(){
         var $oContent = $('.content'),
         	$oBtnBuy = $oContent.find('.btn-buy'),
+            $oMaskTip = $('#mask-tip'),
             $oMaskResult = $('#mask-result'),
             $oBtnVcode = $oMaskResult.find('.btn-vcode'),
             $oResultInfo = $oMaskResult.find(".result-info"),
@@ -19,7 +20,7 @@
             $oBtnOther = $oResultInfo.find('.btn-other'),
             $oRegTip = $oResultInfo.find('.tips'),
             $oBtnCloseMask = $oMaskResult.find('.btn-result-close'),
-            regLogin = false, // 验证是否登录
+//          regLogin = false, // 验证是否登录
             regMobile = true, // 手机号验证
             regVcode = true,  // 验证码验证
             regUser = false, // 新老用户验证   true：新用户   false：老用户
@@ -29,7 +30,15 @@
             _interval = '',
             time = 58;
         
+        $oMaskTip.css({
+			'right':'0',
+			'transition':'.5s'
+		});
         setTimeout(function(){
+        	$oMaskTip.css({
+				'right':'-30%',
+				'transition':'.5s'
+			});
         	$oMaskResult.fadeIn();
         },2000);
         
@@ -76,7 +85,11 @@
 						infoText: tipText,
 						autoClose: '1500'
 					});
-					regLogin = true;
+					$oMaskTip.css({
+						'right':'0',
+						'transition':'.5s'
+					});
+//					regLogin = true;
         		}else{
         			$oRegTip.text('验证码不正确');
         		}
@@ -95,17 +108,36 @@
 			time = 58;
 			count = 0;
 			$oMaskResult.fadeOut();
+			$oMaskTip.css({
+				'right':'0',
+				'transition':'.5s'
+			});
+		});
+		
+		// 快注弹窗
+		$oMaskTip.on('tap',function(){
+			$oMaskTip.css({
+				'right':'-30%',
+				'transition':'.5s'
+			});
+			$oBtnReg.show();
+			$oBtnOther.hide();
+        	$oMaskResult.fadeIn();
 		});
 		
 		// 立即订购
 		$oBtnBuy.on("tap",function(){
-			if(regLogin){
-				// 跳转至相应页面
-			}else{
+//			if(regLogin){
+//				// 跳转至相应页面
+//			}else{
 				$oBtnReg.hide();
 				$oBtnOther.show();
+				$oMaskTip.css({
+					'right':'-30%',
+					'transition':'.5s'
+				});
 				$oMaskResult.fadeIn();
-			}
+//			}
 		});
 		
     }
