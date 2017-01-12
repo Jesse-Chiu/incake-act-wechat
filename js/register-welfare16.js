@@ -16,6 +16,7 @@
             $oBtnVcode = $oMaskResult.find('.btn-vcode'),
             $oResultInfo = $oMaskResult.find(".result-info"),
             $oBtnReg = $oResultInfo.find('#btn-register'),
+            $oBtnOther = $oResultInfo.find('.btn-other'),
             $oRegTip = $oResultInfo.find('.tips'),
             $oBtnCloseMask = $oMaskResult.find('.btn-result-close'),
             regLogin = false, // 验证是否登录
@@ -101,6 +102,8 @@
 			if(regLogin){
 				// 跳转至相应页面
 			}else{
+				$oBtnReg.hide();
+				$oBtnOther.show();
 				$oMaskResult.fadeIn();
 			}
 		});
