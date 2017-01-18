@@ -1,0 +1,23 @@
+body { max-width: 640px; margin: 0 auto; }
+
+.content .banner,
+.content .info { position: relative; }
+.content .banner .chick { position: absolute; top: 1%; left: 2%; width: 27.6%; height: 12.5%; background: url(../img/chick-party/chick01.png) no-repeat; background-size: contain; -webkit-animation: .45s fly infinite; animation: .45s fly infinite; }
+.content .info .btn-buy { position: absolute; top: 2%; left: 16%; display: block; width: 52%; height: 8%; }
+/* 活动规则  */
+.box-rules .rules { width: 80%;padding: 16px 10% 36px; background-color: #c09971; text-align: justify; color: #fff; }
+.box-rules .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.box-rules .rules dd { position: relative; width: 96%; padding-left: 4%; line-height: 20px; }
+.box-rules .rules dd:after { position: absolute; top: 0; left: 0; display: block; width: 2%; content: '◆'; font-size: 10px; }
+
+/* 小鸡动画  */
+@-webkit-keyframes fly {
+	0% { background: url(../img/chick-party/chick01.png) no-repeat; background-size: contain; }
+	50% { background: url(../img/chick-party/chick02.png) no-repeat; background-size: contain; }
+	100% { background: url(../img/chick-party/chick01.png) no-repeat; background-size: contain; }
+}
+@keyframes fly {
+	0% { background: url(../img/chick-party/chick01.png) no-repeat; background-size: contain; }
+	50% { background: url(../img/chick-party/chick02.png) no-repeat; background-size: contain; }
+	100% { background: url(../img/chick-party/chick01.png) no-repeat; background-size: contain; }
+}
