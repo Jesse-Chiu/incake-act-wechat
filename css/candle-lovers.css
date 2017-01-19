@@ -1,0 +1,15 @@
+body { max-width: 640px; margin: 0 auto; background-color: #f7eae8; }
+
+.content .banner { position: relative; }
+.content .banner .btn-buy { position: absolute; bottom: 1.6%; left: 24%; display: block; width: 44%; height: 4%; }
+.content .banner02 .btn-buy { bottom: 0; left: 28%; width: 44%; height: 6%; }
+
+.content .flower-angel { position: relative; width: 100%; margin: 10% 0;}
+.content .flower-angel .flower { width: 35%; margin: 0 0; }
+.content .flower-angel .angel { position: absolute; top: 26%; right: 0; width: 64%; }
+
+/* 活动规则  */
+.box-rules .rules { width: 80%;padding: 26px 10% 36px; background-color: #d6c8bf; text-align: justify; color: #fff; }
+.box-rules .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.box-rules .rules dd { position: relative; width: 96%; padding-left: 4%; line-height: 20px; }
+.box-rules .rules dd:after { position: absolute; top: 0; left: 0; display: block; width: 2%; content: '◆'; font-size: 10px; }
