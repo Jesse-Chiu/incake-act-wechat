@@ -1,0 +1,32 @@
+body { max-width: 640px; margin: 0 auto; background-color: #f8f7fd;}
+.content .banner { position: relative; }
+.content .banner a { position: absolute; bottom: 0; left: 44%; display: block; width: 32%; height: 8%; }
+
+.content .exchange { width: 92%; padding-bottom: 10px; background-color: #795b3e; border-radius: 4px; margin: 0 auto; }
+.content .exchange .title { height: 60px; font-size: 16px; line-height: 60px; text-align: center; color: #fff; }
+.exchange ul { width: 75%; margin: 0 auto; }
+.exchange li { width: 100%; height: 40px; margin-bottom: 15px; border-radius: 4px; overflow: hidden; }
+.exchange li input { width: 100%; height: 40px; background-color: #fff; border: none; border-radius: 0; text-indent: 1em; font-size: 14px; line-height: 40px; }
+.exchange li .txt-vcode { float: left; width: 55%; }
+.exchange li .btn-vcode { float: left; display: inline-block; width: 45%; height: 40px; background-color: #b78888; font-size: 14px; line-height: 40px; color: #fff; text-align: center; }
+.exchange li .btn-buy {  display: block; width: 100%; height: 40px; background-color: #ff9d12; font-size: 16px; line-height: 40px; color: #fff; text-align: center;  }
+
+.content .rules { position: relative; width: 88%; padding: 16px 6% 36px; background-color: #ead6bb; margin-top: 28px; text-align: justify; color: #8f6429; }
+.content .rules:after { position: absolute; top: -4%; right: 0; display: block; width: 24.6%; height: 26%; background: url(../img/iQIYI-v1/icon_rule.png) no-repeat; background-size: contain; content: ''; }
+.content .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; }
+.content .rules dd { line-height: 20px; }
+.content .rules dd span { color: #ffec93; }
+
+/* 活动过期提示 */
+#mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; }
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 84%; max-width: 540px; background: #fff; margin: auto; border-radius: 6px; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.result img { width: 100%; }
+
+.result .result-content .result-info { position: relative; width: 100%; padding-top: 20px; }
+.result .result-content .result-info .btn-close { position: absolute; top: 5%; right: 3%; display: block; width: 7.4%; }
+.result-content .result-info .tip-title { width: 95%; border-bottom: 1px solid #123875; margin: 0 auto; font-size: 16px; line-height: 34px; color: #123875; text-indent: 1em; }
+.result-content .result-info .tip-text { width: 84%; margin: 20px auto; }
+.result-content .result-info .tip-text li { float: left; width: 28%; border: 1px solid #f0f0f0; margin: 0 6.8% 10px 0; border-radius: 4px; font-size: 14px; line-height: 34px; color: #505050; text-align: center; }
+.result-content .result-info .tip-text li:nth-of-type(3n) { margin-right: 0; }
+.result-content .result-info .tip-text li.active { background-color: #f0f0f0; border-color: #123875; color: #123875;}
+.result-content .result-info .btn-ok { display: block; width: 100%; background-color: #123875; border-radius: 0 0 6px 6px; font-size: 16px; line-height: 44px; text-align: center; color: #fff;  }
