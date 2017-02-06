@@ -1,0 +1,16 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #fff; }
+.content .cake { position: relative; }
+.content .cake a{ position: absolute; bottom: 50%; left: 60%; display: block; width: 15.2%; height: 22%; }
+.content .cake01 a{ bottom: 13.8%; left: 64%; height: 8%; }
+.content .cake02 a{ bottom: 48%; left: 40.8%; }
+.content .cake03 a{ bottom: 44%; left: 69.8%; }
+.content .cake04 a{ bottom: 46%; left: 43%; height: 20%; }
+.content .cake05 a{ bottom: 42%; left: 76%; }
+.content .cake06 a{ bottom: 46%; left: 45.4%; height: 21%; }
+.content .cake07 a{ bottom: 42%; left: 76%; height: 20%; }
+.content .cake08 a{ bottom: 51%; left: 40.4%; height: 18%; }
+
+.content .rules { width: 90%;padding: 0 5% 20px; background-color: #d2ebf0; text-align: center; color: #353230; }
+.content .rules dt{ line-height: 30px; font-size: 18px; }
+.content .rules dd{ line-height: 20px; }
