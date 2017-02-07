@@ -1,0 +1,52 @@
+body { max-width: 640px; margin: 0 auto; }
+.content >div{position: relative;}
+.content a{display: block; width: 10%;}
+.content .btn-buy01{position: absolute;left: 75%;top: 29%;}
+.content .btn-buy02{position: absolute;left: 15%;top: 45%;}
+.content .btn-buy03{position: absolute;right: 13%;bottom: 31%;}
+.content .btn-buy04{position: absolute;left: 15%;bottom: 13%;}
+
+.content .rules { width: 90%;padding: 5px 5% 50px; background-color: #f8e3e4; text-align: center;}
+.content .rules p{margin: 15px;}
+
+/* 快注提示 */
+#mask-tip { position: absolute; bottom: 5%;  display: block; width: 30%; z-index: 9999; -webkit-animation: 3s ani-smooth infinite; -webkit-transform-origin: right bottom; animation: 3s ani-smooth infinite; transform-origin: right bottom; }
+#mask-tip img { width: 100%; }
+
+/* 弹窗提示 */
+#mask-result { position: fixed; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 9999; }
+#mask-result img { width: 100%; }
+#mask-result .mask-bg,
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 90%; margin: auto; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-30%); transform: translateY(-30%); }
+#mask-result .result { top: 54%; }
+#mask-result .btn-result-close { display: block; position: absolute; top: 45%; right: 10%; width: 6.3%; z-index: 99999; }
+
+#mask-result .result-info { width: 84%; margin: 28% auto 0; }
+#mask-result .result-info a { display: block; width: 100%; background-color: #0e2f8f; border-radius: 6px; font-size: 16px; line-height: 40px; text-align: center; color: #fff; }
+
+#mask-result .result-login .frm { width: 80%; margin: 0 auto; margin-top: -30px;}
+#mask-result .result-login li { margin-bottom: 10px; }
+#mask-result .result-login li input { display: block; height: 36px; line-height: 36px; text-indent: 1em; -webkit-appearance: none; border: 1px solid #ddd; border-radius: 5px; outline: none; font-size: 12px; }
+#mask-result .result-login li .txt-vcode { float: left; width: 56%; border-radius: 5px 0 0 5px; }
+#mask-result .result-login li .btn-vcode { float: left; width: 44%; height: 36px; line-height: 36px; margin-left: -4px; text-align: center; border: 1px solid #983023; border-radius: 0 5px 5px 0; color: #fff; background-color: #9d686b; }
+#mask-result .result-login li a { font-size: 12px; }
+#mask-result .result-login li .txt-mobile { width: 100%; }
+#mask-result .result-login .tips { width: 80%; margin: -4px auto 0; font-size: 12px; line-height: 12px; text-align: center; color: red; }
+#mask-result .result-login #btn-register,
+#mask-result .result-login .btn-other a { display: block; height: 36px; font-size: 16px; line-height: 36px; text-align: center; border-radius: 5px; background: #dfb4b7; color: #fff; }
+#mask-result .result-login #btn-register,
+#mask-result .result-login .btn-other { width: 80%; margin: 8% auto 0; }
+#mask-result .result-login .btn-other { display: none; }
+#mask-result .result-login #btn-goOn { float: left; width: 40%; background-color: #f3c5c8; }
+#mask-result .result-login #btn-receive { float: right; width: 58%; background: #9d686b;}
+
+@-webkit-keyframes myfirst{
+	0%   { -webkit-transform: scale(1); }
+	50%  { -webkit-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes ani-smooth{
+	0%   { transform: scale(1); }
+	50%  { transform: scale(0.8); }
+	100% { transform: scale(1); }
+}
