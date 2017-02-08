@@ -10,7 +10,7 @@ body { max-width: 640px; margin: 0 auto; }
 .content .rules p{margin: 15px;}
 
 /* 快注提示 */
-#mask-tip { position: absolute; bottom: 5%;  display: block; width: 30%; z-index: 9999; -webkit-animation: 3s ani-smooth infinite; -webkit-transform-origin: right bottom; animation: 3s ani-smooth infinite; transform-origin: right bottom; }
+#mask-tip { position: fixed; bottom: 2%;  display: block; width: 30%; z-index: 9999; -webkit-animation: 3s ani-smooth infinite; -webkit-transform-origin: right bottom; animation: 3s ani-smooth infinite; transform-origin: right bottom; }
 #mask-tip img { width: 100%; }
 
 /* 弹窗提示 */
