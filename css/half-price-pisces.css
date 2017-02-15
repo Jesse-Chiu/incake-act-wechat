@@ -1,0 +1,16 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #fbfaf5; }
+.content img { width: 100%; }
+
+.content .banner,
+.content .pisces-boy,
+.content .pisces-girl,
+.content .pisces-rule { width: 100%; }
+
+.content .pisces-boy,
+.content .pisces-girl { position: relative; }
+
+.content .btns { position: absolute; bottom: 4px; left: 17%; width: 66%; }
+.content .btns .btn { display: block; width: 37%; }
+.content .btns .btn-6inc { float: left; }
+.content .btns .btn-8inc { float: right; }
