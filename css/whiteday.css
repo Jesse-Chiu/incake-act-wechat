@@ -1,0 +1,27 @@
+body { max-width: 640px; margin: 0 auto; }
+.content .banner { position: relative; }
+.content .banner a.tips { position: absolute; top: 38%; right: 7%; display: block; width: 26%; -webkit-animation: 3s ani-smooth infinite; -webkit-transform-origin: left bottom; animation: 3s ani-smooth infinite; transform-origin: left bottom; }
+.content .banner a.tips-buy { position: absolute; top: 21%; right: 4%; display: block; width: 24.5%; }
+.content .banner a.btn-buy { position: absolute; bottom: 0; left: 33%; width: 34%; height: 30px; background-color: #dd0a02; border-radius: 4px; font-size: 14px; line-height: 30px; color: #fff; text-align: center; -webkit-animation: 3s ani-smooth infinite; animation: 3s ani-smooth infinite; }
+
+/* 快注提示 */
+#mask-tip { position: fixed; bottom: 13%; right: 0; width: 43.4%; z-index: 9999; }
+#mask-tip img { width: 100%; }
+
+/* 活动规则  */
+.rules { width: 88%;padding: 16px 6% 26px; background-color: #ffdcdc; text-align: justify; color: #646d83; }
+.rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; text-align: center; }
+.rules dd { position: relative; width: 96%; padding-left: 4%; line-height: 20px; }
+.rules dd:after { position: absolute; top: 0; left: 0; display: block; width: 2%; content: '◆'; font-size: 10px; }
+
+
+@-webkit-keyframes myfirst{
+	0%   { -webkit-transform: scale(1); }
+	50%  { -webkit-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes ani-smooth{
+	0%   { transform: scale(1); }
+	50%  { transform: scale(0.8); }
+	100% { transform: scale(1); }
+}
