@@ -1,0 +1,6 @@
+.content { width: 100%; }
+.content img { width: 100%; }
+.content .banner { width: 100%; }
+.content .conts { position: relative; width: 100%; }
+.content .conts .btn-buy { display: block; position: absolute; top: 24%; right: 12%; width: 19%; }
+.content .rule { width: 100%; }
