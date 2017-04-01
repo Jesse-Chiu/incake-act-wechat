@@ -1,0 +1,13 @@
+body { max-width: 640px; margin: 0 auto; }
+.content { background-color: #fff; }
+.content .info { position: relative;background: url("../img/add-lunckyBag/shade.jpg"); }
+.content .info .blink01{display: block;width: 32%;height: 9%;position: absolute;left: 16%;top: 25%;background: url("../img/add-lunckyBag/blink01.gif") no-repeat;background-size: 100% 100%;}
+.content .info .blink02{display: block;width: 25%;height: 11%;position: absolute;right: 6%;bottom: 4%;background: url("../img/add-lunckyBag/blink02.gif") no-repeat;background-size: 100% 100%;}
+
+.content .info .btn-buy{ position: absolute; bottom:8.5%; left: 32%; display: block; width: 40%; height: 7%; background: url("../img/add-lunckyBag/buy.png") no-repeat;background-size: 100% 100%;}
+.content .desc { display: block; width: 82%; margin: 8% auto; }
+
+.content .rules { width: 88%;padding: 26px 6%; background-color: #5c5c5c; color: #fff; }
+
+.content .rules dt{ margin-bottom: 4px; line-height: 30px; font-size: 18px;}
+.content .rules dd{ line-height: 20px; }

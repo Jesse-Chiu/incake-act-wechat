@@ -1,0 +1,11 @@
+﻿.content img { width: 100%; }
+.content .banner { width: 100%; }
+.content .desc { position: relative; width: 100%; }
+.content .desc .btn-buy { display: block; position: absolute; top: 0; left: 37.5%; width: 25%; border-radius: 50%; }
+.content .desc .btn-buy .flower { display: block; position: absolute; top: -14%; right: -50%; width: 76%; }
+
+.content .rule { width: 100%; background-color: #de4f51; }
+.content .rule dl { width: 90%; padding: 15px 0; margin: 0 auto; color: #fff; text-align: justify; }
+.content .rule dt { font-size: 18px; line-height: 30px; }
+.content .rule dd { font-size: 14px; line-height: 24px; }
+.content .rule dd span { color: #edc150; }
