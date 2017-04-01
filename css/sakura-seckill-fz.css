@@ -1,0 +1,22 @@
+body { max-width: 640px; margin: 0 auto; background-color: #f9f9f9; }
+
+.content .cake { position: relative; }
+.content .cake .btn-buy { position: absolute; bottom: 0; left: 39%; display: block; width: 28%; height: 7%; }
+.content .cake01 .btn-buy { height: 4%; }
+.content .cake03 .btn-buy { left: 38%; }
+.content .cake04 .btn-buy { left: 40%; }
+
+.info { margin-top: 40px; background-color: #4f4a3a; }
+/* 活动规则  */
+.info .rules { width: 84%;padding: 16px 8% 10px; text-align: justify; color: #fff; }
+.info .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; padding-left: 4%; }
+.info .rules dd { position: relative; width: 96%; padding-left: 4%; line-height: 20px; }
+.info .rules dd:after { position: absolute; top: 0; left: 0; display: block; width: 2%; content: '◆'; font-size: 10px; }
+
+#mask-result { position: fixed; top: 0; left: 0; display: block; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; }
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 70%; max-width: 450px; margin: auto; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.result p { position: relative; }
+.result p a { position: absolute;  display: block; }
+.result p a.btn-close { top: 7%; right: 7%; width: 11%; height: 11%; border-radius: 50%; }
+.result p a.btn-website { top: 70%; left: 30%; width: 40%; height: 10%; }
+.result img { display: block; width: 100%; }

@@ -1,0 +1,14 @@
+body { max-width: 640px; margin: 0 auto; background-color: #f9f9f9; }
+
+.content .cake { position: relative; }
+.content .cake .btn-buy { position: absolute; bottom: 0; left: 36%; display: block; width: 28%; height: 7%; }
+.content .cake01 .btn-buy { height: 5.2%; }
+
+.info { margin-top: 40px; background-color: #4f4a3a; }
+.info .qr-code { width: 29%; margin: 0 auto 10px; }
+.info .text { font-size: 14px; line-height: 20px; color: #ffb226; text-align: center; }
+/* 活动规则  */
+.info .rules { width: 84%;padding: 16px 8% 10px; text-align: justify; color: #fff; }
+.info .rules dt { margin-bottom: 4px; line-height: 30px; font-size: 16px; padding-left: 4%; }
+.info .rules dd { position: relative; width: 96%; padding-left: 4%; line-height: 20px; }
+.info .rules dd:after { position: absolute; top: 0; left: 0; display: block; width: 2%; content: '◆'; font-size: 10px; }
