@@ -1,0 +1,29 @@
+.content { width: 100%; }
+.content img { width: 100%; }
+.content .banner { width: 100%; position: relative;}
+.content .banner a{display: block;position: absolute;left: 30%;bottom: 3%; width: 43%;height: 6%;background: url("../img/cheese-seckill/buy.png") no-repeat;background-size: 100% 100%;}
+.content .rule { width: 100%; }
+
+#mask-result { position: fixed; top: 0; left: 0;  width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
+#mask-result img { width: 100%; }
+#mask-result .result { position: absolute; top: 50%; left: 0; right: 0; width: 73.4375%; max-width: 500px; background: #fff; border-radius: 6px; margin: auto; z-index: 9999; overflow: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+#mask-result .result .btn-result-close { display: block; position: absolute; top: 5%; right: 5%; width: 10.6%; z-index: 9999; }
+
+#mask-result .result .result-content { width: 100%; }
+#mask-result .result .result-content .result-info { position: relative;  width: 100%; }
+#mask-result .result .result-content .result-info a.btn-web { position: absolute; top: 58%; left: 14.5%; display: block; width: 71%; height: 15%; }
+
+#mask-result .result-login .register-title { width: 60%; height: 20px; margin: 10% auto 8%; font-size: 18px; line-height: 20px; text-align: center; color: #ad826e; }
+#mask-result .result-login .frm { width: 80%; margin: 0 auto; }
+#mask-result .result-login li { position: relative; border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+#mask-result .result-login li input { display: block; height: 40px; line-height: 40px; -webkit-appearance: none; border: 0px; outline: none; font-size: 12px; }
+#mask-result .result-login li .txt-mobile { float: left; width: 54%; }
+#mask-result .result-login li #btn-vcode { float: left; width: 46%; height: 30px; line-height: 30px; margin: 5px 0; text-align: center; border-radius: 5px; color: #fff; background-color: #d39961; }
+#mask-result .result-login li a { font-size: 12px; }
+#mask-result .result-login li .txt-vcode { width: 100%; }
+#mask-result .result-login .tips { width: 80%; margin: -4px auto 0; font-size: 12px; line-height: 12px; color: #d13c4f; }
+#mask-result .result-login #btn-register { display: block; width: 80%; height: 38px; margin: 28px auto; font-size: 16px; line-height: 38px; text-align: center; border-radius: 5px; background-color: #d27136; color: #fff; }
+
+#mask-result .result-login .clearfix span{position: absolute;bottom: 0;left: 0;display: inline-block;max-width: 100%;width: 100%;height: 2px;border-bottom: 1px solid #d9d9d9;}
+#mask-result .result-login .clearfix span:after{content: "";position: absolute;bottom: 0;left: 0;width: 100%;height: 2px;background:#d27136;transform: scale(0);transition: all .2s ease-out;}
+#mask-result .result-login .clearfix input:focus+span:after {transform: scale(1);}
