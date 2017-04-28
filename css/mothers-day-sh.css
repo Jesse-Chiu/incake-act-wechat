@@ -1,0 +1,20 @@
+.content .banner,
+.content .cakes { position: relative; }
+.content .banner .btn-buy,
+.content .cakes .btn-website { position: absolute; bottom: 4%; left: 35%; display: block; width: 30%; -webkit-animation: 1.75s smooth infinite; animation: 1.75s smooth infinite; }
+.content .cakes .btn-website { bottom: 10%; width: 33%; }
+
+.content.other-city .banner .btn-buy { bottom: 0; }
+.content.other-city .cakes .btn-website { bottom: 4%; }
+
+/* 呼吸灯样式  */
+@-webkit-keyframes smooth {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.1); }
+	100% { -webkit-transform: scale(1); }
+}
+@keyframes smooth {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+}
