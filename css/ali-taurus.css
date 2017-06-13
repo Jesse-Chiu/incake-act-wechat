@@ -1,0 +1,11 @@
+.content { width: 100%; }
+.content img { width: 100%; }
+.content .banner { width: 100%; position: relative;}
+.content .btn-buy { display: block; position: absolute; top: 96%; left: 35%; width: 31%;height: 2.5%; animation: btn 3s infinite;}
+@keyframes btn{
+    0%   { -webkit-transform: scale(1); -ms-transform: scale(1); }
+	50%  { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); -ms-transform: scale(1); }
+}
+.content .rule { width: 100%;text-align: center;}
+

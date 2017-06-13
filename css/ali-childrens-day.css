@@ -1,0 +1,100 @@
+.content { width: 100%; }
+.content img { width: 100%; }
+.content .banner-top { width: 100%; position: relative;background: #c1e2f8;}
+.content .banner-top .discount{position: absolute;left: 6.6%;bottom: -15%;z-index: 998;width: 88%;}
+
+.content .discount-number { display: block; position: absolute; bottom: 2%; left: 52%; width: 12%; animation: discount 3s infinite;z-index: 999;}
+@keyframes discount{
+    0%   { -webkit-transform: scale(1); -ms-transform: scale(1); }
+	50%  { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); -ms-transform: scale(1); }
+}
+.content .rule { width: 100%; background: url("../img/ali-childrens-day/rulebg.png") no-repeat;text-align: center;color: #fff;}
+.content dl{padding-bottom: 20px;}
+.content .rule dt { font-size: 18px; padding: 30px 0 15px; }
+.content .rule dd {  line-height: 20px; }
+.banner-center{
+	width: 100%; position: relative;background: #fcf9f2;
+}
+
+.banner-center .number{
+	display: block;
+	position: absolute;
+	left: 42%;
+	bottom:22%;
+	width: 17%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 25px;
+	color: #fff;
+	background: #dc122c;
+}
+.banner-center >div{
+	position: absolute;
+	left: 20%;
+	bottom: 8%;
+	color: #fff;
+}
+.banner-center >div p{
+	padding-top: 5px;
+}
+.banner-center .btn-buy{
+	display: block;
+	position: absolute;
+	left: 58%;
+	bottom: 8.5%;
+	width: 18%;
+	height: 5%;
+	text-align: center;
+	line-height: 25px;
+	color: #fff;
+	border: 1px solid #fff;
+	animation: discount 3s infinite;
+}
+.shade{
+	display: none;
+ 	position: fixed;
+ 	left: 0;
+ 	top: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background: rgba(0,0,0,0.5);
+ 	z-index: 9998;
+ }
+.shade .shade-up{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -35%;
+	margin-top: -100px;
+	width: 70%;
+	height: 200px;
+	border: 2px solid #000000;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.shade .shade-up >img{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 60px;
+}
+.shade .shade-up .delete{
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	
+}
+.shade .shade-up .delete img{
+	width: 70%;
+	height: 70%;
+}
+.shade .shade-up p{
+	padding: 20px 20px;
+	font-size: 16px;
+	text-align: center;
+	color: #344558;
+}

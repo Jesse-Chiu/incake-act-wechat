@@ -1,0 +1,49 @@
+.content{
+	position: relative;
+	width: 100%;
+	background: #1e1e1e;
+}
+.content .hero{
+	position: absolute;
+	left: 1%;
+	top: 2%;
+	width: 38%;
+	height: 10%;
+	
+}
+.rules{
+	position: relative;
+	width: 100%;
+}
+.rules > img{
+	width: 100%;
+}
+.rules a{
+	position: absolute;
+	left: 30%;
+	top: 0;
+	width: 40%;
+	height: 10%;
+	display: block;
+	animation: btn 3s infinite;
+}
+@keyframes btn{
+	0%   { -webkit-transform: scale(1); -ms-transform: scale(1); }
+	50%  { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); -ms-transform: scale(1); }
+}
+.rules a img{
+	width: 100%;
+	height: 100%;
+}
+.rules dl{
+	position: absolute;
+	left: 2%;
+	top: 50%;
+	color: #fff;
+}
+.rules dl dt{
+	text-align: center;
+	font-size: 18px;
+	padding-bottom: 10px;
+}

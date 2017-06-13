@@ -1,0 +1,14 @@
+.content { width: 100%; }
+.content img { width: 100%; }
+.content .banner { width: 100%; position: relative;}
+.content .banner a{display: block;position: absolute;left: 37%;bottom: 3%; width: 27%;height: 42px;animation: btn 3s infinite;}
+
+@keyframes btn{
+    0%   { -webkit-transform: scale(1); -ms-transform: scale(1); }
+	50%  { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); -ms-transform: scale(1); }
+}
+
+.content .rule { width: 100%;height: auto; position: relative; }
+.content .rule dl{position: absolute;top: 10px;left: 5%;width: 90%; text-align: center;color: #fff;}
+.content .rule dd{line-height: 20px;}

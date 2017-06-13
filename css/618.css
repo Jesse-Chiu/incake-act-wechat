@@ -1,0 +1,75 @@
+.content{
+	width: 100%;
+	height: 100%;
+}
+.content .cakes{
+	position: relative;
+}
+.content .cakes a{
+	display: block;
+	width: 18%;
+	height: 2%;
+	background: url("../img/618/buy.png") no-repeat;
+	background-size: 100% 100%; 
+}
+.content .cakes .btn-buy01{
+	position: absolute;
+	left: 23%;
+	top: 30%;
+}
+.content .cakes .btn-buy02{
+	position: absolute;
+	right: 17%;
+	top: 37.5%;
+}
+.content .cakes .btn-buy03{
+	position: absolute;
+	left: 23%;
+	top: 48.5%;
+}
+.content .cakes .btn-buy04{
+	position: absolute;
+	right: 17%;
+	top: 56.5%;
+}
+.content .cakes .btn-buy05{
+	position: absolute;
+	left: 23%;
+	top: 67.5%;
+}
+.content .cakes .btn-buy06{
+	position: absolute;
+	right: 17%;
+	top: 76.5%;
+}
+.content .cakes .btn-buy07{
+	position: absolute;
+	left: 23%;
+	top: 86.5%;
+}
+.content .cakes .btn-buy08{
+	position: absolute;
+	right: 17%;
+	top: 96.5%;
+}
+.content .cakes img{
+	width: 100%;
+}
+.rules{
+	width: 100%;
+	background-color: #9fc1f1;
+	color: #fff;
+}
+.rules dl {
+	margin-left: 2.5%;
+}
+.rules dl dt{
+	padding-top: 5%;
+	font-weight: bold;
+}
+.rules dl dd{
+	margin: 5px 0;
+}
+.rules dl dd:last-child{
+	padding-bottom: 20px;
+}

@@ -1,0 +1,14 @@
+.content { width: 100%; }
+.content img { width: 100%; }
+.content .banner { width: 100%; position: relative;background: #fcc922;}
+
+.content .btn { display: block; position: absolute; top: 35%; left: 51%; width: 47%; animation: discount 3s infinite;z-index: 999;}
+@keyframes discount{
+    0%   { -webkit-transform: scale(1); -ms-transform: scale(1); }
+	50%  { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); -ms-transform: scale(1); }
+}
+.content .rule { width: 100%; color: #906057;}
+.content dl{padding-bottom: 20px;margin-left: 9%;width: 90%;}
+.content .rule dt { font-size: 14px; }
+.content .rule dd {  line-height: 20px; }

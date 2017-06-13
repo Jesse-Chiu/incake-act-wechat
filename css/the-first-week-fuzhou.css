@@ -1,0 +1,40 @@
+section,article{
+	width: 100%;
+}
+section img{
+	width: 100%;
+}
+section div:first-child{
+	position: relative;
+}
+section div:first-child >a{
+	display: block;
+	position: absolute;
+	left: 13%;
+	bottom: 0;
+	width: 36%;
+	animation: btn 3s infinite;
+}
+@keyframes btn{
+    0%   { -webkit-transform: scale(1); -ms-transform: scale(1); }
+	50%  { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); -ms-transform: scale(1); }
+}
+article{
+	width: 100%;
+	background: url("../img/the-week-fuzhou/rulebg.png") no-repeat;
+	background-size: 100% 100%; 
+	padding: 20px 0;
+}
+article dl{
+	margin-left: 10%;
+	color: #9c736b;
+}
+article dl dt{
+	font-size: 14px;
+}
+article dl dd{
+	margin-top: 10px;
+	font-size: 12px;
+}
+
