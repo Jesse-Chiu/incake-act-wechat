@@ -3,12 +3,12 @@
 	width: 100%;
 	background: #1e1e1e;
 }
-.content .hero{
+.content .price{
 	position: absolute;
-	left: 1%;
-	top: 2%;
-	width: 38%;
-	height: 10%;
+	right: 21%;
+	top: 23%;
+	width: 18%;
+	height: 6%;
 	
 }
 .rules{
